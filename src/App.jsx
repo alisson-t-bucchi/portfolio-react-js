@@ -5,7 +5,7 @@ import JavaIcon from "./assets/icons/java.png"
 import K6Icon from "./assets/icons/k6-icon.webp"
 import PythonIcon from "./assets/icons/python.png"
 import SeleniumIcon from "./assets/icons/selenium.jpeg"
-import Layout from "./components/layout" 
+import Layout from "./components/Layout" 
 import HeroSection from "./components/heroSection"
 import Cards from "./components/Cards"
 
