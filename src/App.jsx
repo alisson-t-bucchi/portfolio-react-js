@@ -6,7 +6,7 @@ import K6Icon from "./assets/icons/k6-icon.webp"
 import PythonIcon from "./assets/icons/python.png"
 import SeleniumIcon from "./assets/icons/selenium.jpeg"
 import Layout from "./components/Layout" 
-import HeroSection from "./components/heroSection"
+import HeroSection from "./components/HeroSection"
 import Cards from "./components/Cards"
 
 const techIcons = [
