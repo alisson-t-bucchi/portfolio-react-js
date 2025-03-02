@@ -1,9 +1,10 @@
 @import "tailwindcss";
 
+
 @theme { 
-    --font-saira-stencil: "Saira Stencil One", sans-serif; 
+    --font-tomorrow: "Tomorrow", sans-serif; 
 } 
 
 * { 
-    font-family: var(--font-saira-stencil);
+    font-family: var(--font-tomorrow);
 }

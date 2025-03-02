@@ -8,6 +8,7 @@ import SeleniumIcon from "./assets/icons/selenium.jpeg"
 import Layout from "./components/Layout" 
 import HeroSection from "./components/HeroSection"
 import Cards from "./components/Cards"
+import AnimatedBackground from "./components/AnimatedBackground"
 
 const techIcons = [
   AllureIcon,
@@ -31,9 +32,9 @@ function App() {
 
         <section id="about" className="text-center">
           <h3 className="text-3xl font-bold">About Me</h3>
-          <div className="grid lg:grid-cols-2">
+          <div className="px-6 grid lg:grid-cols-2">
             <div className="flex justify-center mt-8">
-              <img className="h-40 rounded-xl" 
+              <img className="h-55 rounded-xl" 
               src={BackgroundImg} 
               alt="backgroundd image" 
               />
