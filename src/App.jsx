@@ -26,7 +26,7 @@ const heroSection = {
 
 function App() {
   return (
-    <main className="px-4 text-gray-900 lg:px-30">
+    <main className="px-4 text-gray-900 bg-amber-300 lg:px-30">
       <Layout>
         <HeroSection content={heroSection} />
 
