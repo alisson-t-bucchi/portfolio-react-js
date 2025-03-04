@@ -6,19 +6,11 @@ export default function AboutMe() {
         <h3 className="text-3xl font-bold py-6">About Me</h3>
         <div className="px-6 grid lg:grid-cols-2">
           <div className="flex justify-center mt-4">
-              <img className="w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64" 
-              src="src/assets/icons/qa_tester.gif" 
-              alt="" 
-              />
-              <img className="w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64" 
-              src="src/assets/icons/ai_robot.gif" 
-              alt="" 
-              />
-
-           {/* <img className="h-55 rounded-xl" 
+            <img className="h-60 rounded-xl" 
             src={BackgroundImg} 
             alt="backgroundd image" 
-            /> */}
+            />
+
           </div>
           <div>
             <p className=" mt-4 text-lg lg:text-justify">
