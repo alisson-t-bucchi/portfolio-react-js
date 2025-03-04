@@ -11,10 +11,10 @@ export default function Cards() {
             Short description... 
             </p>
             <div className="flex space-x-4 mt-4">
-                <a href="#" className="text-blue-600">
+                <button href="#" className="bg-white px-4 py-1 rounded-lg">
                     Live Preview
-                </a>
-                <a href="#" className="text-blue-600">
+                </button>
+                <a href="#" className="bg-white px-4 py-1 rounded-lg">
                     View code
                 </a>
             </div>
