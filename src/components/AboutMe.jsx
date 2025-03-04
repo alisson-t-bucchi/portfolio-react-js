@@ -5,13 +5,9 @@ export default function AboutMe() {
         <section id="about" className="text-center py-22">
         <h3 className="text-3xl font-bold py-6">About Me</h3>
         <div className="px-6 grid lg:grid-cols-2">
-          <div className="flex justify-center mt-8">
+          <div className="flex justify-center mt-4">
               <img className="w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64" 
               src="src/assets/icons/qa_tester.gif" 
-              alt="" 
-              />
-              <img className="w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64" 
-              src="src/assets/icons/data.gif" 
               alt="" 
               />
               <img className="w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64" 
