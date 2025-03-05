@@ -8,6 +8,7 @@ import Layout from "./components/Layout"
 import HeroSection from "./components/HeroSection"
 import Cards from "./components/Cards"
 import AboutMe from "./components/AboutMe"
+import AboutMeImage from "./components/AboutMeImage"
 import AnimatedBackground from "./components/AnimatedBackground"
 
 const techIcons = [
@@ -57,8 +58,9 @@ function App() {
         </div>
         </section>
 
-        <AboutMe> </AboutMe>
-        
+        <AboutMe>
+          <AboutMeImage></AboutMeImage>
+        </AboutMe>
 
         <section id="projects">
         <h3 className="text-3xl font-bold text-center mb-4">Projects</h3>

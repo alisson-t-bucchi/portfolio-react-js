@@ -1,4 +1,5 @@
 import BackgroundImg from "../assets/background-image-colorfull_3.jpg"
+import AboutMeImage from "./AboutMeImage"
 
 export default function AboutMe() {
     return (
@@ -6,10 +7,13 @@ export default function AboutMe() {
         <h3 className="text-3xl font-bold py-6">About Me</h3>
         <div className="px-6 grid lg:grid-cols-2">
           <div className="flex justify-center mt-4">
-            <img className="h-60 rounded-xl" 
+            <AboutMeImage>
+              
+            </AboutMeImage>
+            {/* <img className="h-60 rounded-xl" 
             src={BackgroundImg} 
             alt="backgroundd image" 
-            />
+            /> */}
 
           </div>
           <div>
