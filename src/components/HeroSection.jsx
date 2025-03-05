@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
-import WebPhoto from "../assets/web_photo.jpg"
+import WebPhoto from "../assets/images/web_photo.jpg"
 
 export default function HeroSection({content: {title, role}}) {
   return (
@@ -14,7 +14,6 @@ export default function HeroSection({content: {title, role}}) {
             src={WebPhoto} 
             alt="Alisson" 
             />
-
             {/* <button className=" mt-4 bg-blue-600 text-white px-6 py-2 rounded-lg">
               Contact me
             </button> */}
