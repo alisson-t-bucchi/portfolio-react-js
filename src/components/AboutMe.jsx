@@ -1,4 +1,5 @@
-import BackgroundImg from "../assets/images/"
+// import BackgroundImg from "../assets/images/"
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 export default function AboutMe() {
     return (
@@ -6,6 +7,12 @@ export default function AboutMe() {
         <h3 className="text-3xl font-bold py-6">About Me</h3>
         <div className="px-6 grid lg:grid-cols-2">
           <div className="flex justify-center mt-4">
+          <DotLottieReact
+            src="https://lottie.host/2a8f3e4b-9dec-4c33-8db0-ed4dbf40cc71/bGHxcEAP5g.lottie"
+            loop
+            autoplay
+          />
+            
             {/* <img className="h-60 rounded-xl" 
             src={BackgroundImg} 
             alt="backgroundd image" 

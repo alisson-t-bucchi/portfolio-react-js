@@ -8,8 +8,7 @@ import Layout from "./components/Layout"
 import HeroSection from "./components/HeroSection"
 import Cards from "./components/Cards"
 import AboutMe from "./components/AboutMe"
-import AboutMeImage from "./components/AboutMeImage"
-import AnimatedBackground from "./components/AnimatedBackground"
+// import AnimatedBackground from "./components/AnimatedBackground"
 
 const techIcons = [
   AllureIcon,
@@ -58,10 +57,8 @@ function App() {
         </div>
         </section>
 
-        <AboutMe>
-          <AboutMeImage></AboutMeImage>
-        </AboutMe>
-
+        <AboutMe> </AboutMe>
+        
         <section id="projects">
         <h3 className="text-3xl font-bold text-center mb-4">Projects</h3>
         <div className="grid lg:grid-cols-3 lg:gap-6 md:grid-cols-2 md:gap-6">
