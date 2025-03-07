@@ -1,10 +1,13 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import WorkanaLogo from "../assets/images/workana_logo.webp";
+import LogicalisLogo from "../assets/images/logicalis_logo.webp"
+import UpworkLogo from "../assets/images/upwork_logo.webp"; 
 
 const images = [
-  "src/assets/images/workana_logo.png",
-  "src/assets/images/logicalis_logo.png",
-  "src/assets/images/upwork_logo.png",
+  WorkanaLogo,
+  LogicalisLogo,
+  UpworkLogo
 ];
 
 export default function Banner() {

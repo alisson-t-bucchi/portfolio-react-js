@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
-import WebPhoto from "../assets/images/web_photo.jpg"
+import WebPhoto from "../assets/images/web_photo.webp"
 
 export default function HeroSection({content: {title, role}}) {
   return (
