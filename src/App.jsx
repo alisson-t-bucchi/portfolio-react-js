@@ -16,7 +16,7 @@ import Layout from "./components/Layout"
 import HeroSection from "./components/HeroSection"
 import Cards from "./components/Cards"
 import AboutMe from "./components/AboutMe"
-// import AnimatedBackground from "./components/AnimatedBackground"
+import AnimatedBackground from "./components/AnimatedBackground"
 
 const techIcons1 = [
   JavaIcon,
@@ -45,48 +45,47 @@ const heroSection = {
 
 function App() {
   return (
-    <main className="px-4 text-gray-900 bg-gradient-to-r from-lime-100 via-lime-200 to-lime-300 lg:px-30">
+    <main className="px-4 text-gray-900 bg-gradient-to-r from-lime-200 via-lime-300 to-lime-400 lg:px-30">
       <Layout>
         <HeroSection content={heroSection} />
-
+        
         <section id="tech-stack" className="text-left py-6">
-        <h3 className="text-3xl font-bold">My Tech Stack</h3>
-        <p className="text-lg py-4">I'm currently working with: </p>
-        <div className="flex gap-4 justify-start items-center flex-wrap overflow-x-auto">
-          {techIcons1.map((technology, key) => ( 
-             <img className="w-18 h-14 object-contain"
-             key={`technology-${key}`} 
-             src={technology} 
-             alt={`img-${key}`} 
-             />
-          ))}
-        </div>
+          <h3 className="text-3xl font-bold">My Tech Stack</h3>
+          <p className="text-lg py-4">I'm currently working with: </p>
+          <div className="flex gap-4 justify-start items-center flex-wrap overflow-x-auto">
+            {techIcons1.map((technology, key) => ( 
+              <img className="w-14 h-12 object-contain"
+              key={`technology-${key}`} 
+              src={technology} 
+              alt={`img-${key}`} 
+              />
+              ))}
+          </div>
         </section>
 
         <section id="tech-stack" className="text-left py-6">
-        <p className="text-lg py-4">I'm learning and interest in:</p>
-        <div className="flex gap-4 justify-start items-center flex-wrap overflow-x-auto">
-          {techIcons2.map((technology, key) => ( 
-             <img className="w-18 h-14 object-contain"
-             key={`technology-${key}`} 
-             src={technology} 
-             alt={`img-${key}`} 
-             />
-          ))}
-        </div>
+          <p className="text-lg py-4">I'm learning and interest in:</p>
+          <div className="flex gap-4 justify-start items-center flex-wrap overflow-x-auto">
+            {techIcons2.map((technology, key) => ( 
+              <img className="w-14 h-12 object-contain"
+              key={`technology-${key}`} 
+              src={technology} 
+              alt={`img-${key}`} 
+              />
+            ))}
+          </div>
         </section>
 
         <AboutMe> </AboutMe>
         
         <section id="projects">
-        <h3 className="text-3xl font-bold text-center mb-4 py-4">Projects</h3>
-        <div className="grid lg:grid-cols-3 lg:gap-6 md:grid-cols-2 md:gap-6">
-        {[1,2,3,4,5,6].map((project) => (
-          <Cards key={`project-${project}`} />
-        ))}
-        </div>
+          <h3 className="text-3xl font-bold text-center mb-4 py-4">Projects</h3>
+          <div className="grid lg:grid-cols-3 lg:gap-6 md:grid-cols-2 md:gap-6">
+            {[1,2,3,4,5,6].map((project) => (
+              <Cards key={`project-${project}`} />
+              ))}
+          </div>
         </section>
-
 
       </Layout>
     </main>

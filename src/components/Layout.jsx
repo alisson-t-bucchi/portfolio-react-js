@@ -25,10 +25,14 @@ export default function Layout({ children }) {
     </nav>
     
     {children}
-  
-        <footer id="contact" className="text-center py-6 border-t mt-12">
-            <p>&copy; 2025 ALISSONDEV</p>
-        </footer>
+
+    <footer className="py-15 body-font">
+     <div className="px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+        <a className="flex title-font font-medium items-center md:justify-start justify-center">
+            <span className="ml-3 text-xl">© 2024 Website MIT Licensed.</span>
+        </a>
+     </div>
+    </footer>
   </>
   )
 }
