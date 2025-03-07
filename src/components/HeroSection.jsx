@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faDownload, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import WebPhoto from "../assets/images/web_photo.jpg"
 
@@ -14,7 +14,7 @@ export default function HeroSection({content: {title, role}}) {
             src={WebPhoto} 
             alt="Alisson" 
             />
-            {/* <button className=" mt-4 bg-blue-600 text-white px-6 py-2 rounded-lg">
+          {/*   <button className=" bg-blue-600 text-white px-1 py-1 rounded-lg">
               Contact me
             </button> */}
 
@@ -27,6 +27,9 @@ export default function HeroSection({content: {title, role}}) {
               </a>
               <a href="mailto:alisson.bucchi@outlook.com" target="_blank">
                 <FontAwesomeIcon icon={faEnvelope} size="2x" className="hover:text-white transition-colors duration-150 transform hover:scale-145" />
+              </a>
+              <a href="https://issuu.com/alisson-tech-dev/docs/professional_skill_doc_3" target="_blank">
+                <FontAwesomeIcon icon={faDownload} size="2x" title="Skills doc here!" transition="opacity 0.1s" className="hover:text-white transition-colors duration-150 transform hover:scale-145" />
               </a>
             </div>
         </div>
