@@ -15,9 +15,9 @@ export default function Banner() {
 
   useEffect(() => {
     const updateImages = () => {
-      if (window.innerWidth < 640) setNumImages(2); // Telas pequenas (exibe 2 imagens)
-      else if (window.innerWidth < 1024) setNumImages(3); // Tablets (exibe 3 imagens)
-      else setNumImages(4); // Desktop (exibe 4 imagens)
+      if (window.innerWidth < 640) setNumImages(2);
+      else if (window.innerWidth < 1024) setNumImages(3);
+      else setNumImages(4);
     };
 
     updateImages();
@@ -36,7 +36,7 @@ export default function Banner() {
           transition={{
             repeat: Infinity,
             repeatType: "loop", 
-            duration: 15,
+            duration: 80,
             ease: "linear",
           }}
         >

@@ -1,4 +1,4 @@
-import projectImg from "../assets/images/CC360.webp"
+import projectImg from "../assets/images/coming_soon.jpg"
 
 export default function Cards() {
   return (
