@@ -33,7 +33,7 @@ const techIcons2 = [
   TensorflowIcon
 ]
 
-export default function TechStack() {
+export default function TechStack({ children }) {
   return (
     <>
         <section className="text-left py-6">

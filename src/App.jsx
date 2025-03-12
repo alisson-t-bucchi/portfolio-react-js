@@ -1,6 +1,6 @@
 import Layout from "./components/Layout" 
 import HeroSection from "./components/HeroSection"
-import Cards from "./components/Cards"
+import ProjectCards from "./components/ProjectCards"
 import AboutMe from "./components/AboutMe"
 import Banner from "./components/Banner"
 import AnimatedBackground from "./components/AnimatedBackground"
@@ -9,7 +9,7 @@ import TechStack from "./components/TechStack"
 
 const heroSection = {
   title: "Alisson T. Bucchi",
-  role: "QA Tester & Data Developer + Automation Specialist"
+  role: "Software QA & Data Developer | AI & ML Enthusiast"
 } 
 
 function App() {
@@ -25,7 +25,7 @@ function App() {
 
         <Banner></Banner>
 
-        <Cards></Cards>
+        <ProjectCards></ProjectCards>
 
         <Testimonials></Testimonials>
 

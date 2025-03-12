@@ -1,3 +1,4 @@
+import ComingSoon from "../assets/images/coming-soon.jpg"
 import WebFormPage from "../assets/images/web-form-page.webp"
 import WebFormVideo from "../assets/videos/web-form-page.mp4"
 import PizzaPricePredictorApp from "../assets/images/pizza-price-predictor-app.webp"
@@ -12,6 +13,14 @@ const qaProjects = [
         video: WebFormVideo,
         code:"https://github.com/alisson-t-bucchi/webform_selenium_behave_python.git"
     },
+    {
+        id: 2,
+        image: ComingSoon,
+        title: "Future project",
+        description: "Future project",
+        video: " ",
+        code: " "
+    },
 ];
 
 const iaProjects = [
@@ -22,7 +31,15 @@ const iaProjects = [
       description: "Pizza price predictor in Python using Pandas, Sklearn and Streamlit libraries",
       video: PizzaPricePredictorAppVideo ,
       code: "https://github.com/alisson-t-bucchi/predict-pizza-values-ml.git"
-    }
+    },
+    {
+        id: 2,
+        image: ComingSoon,
+        title: "Future project",
+        description: "Future project",
+        video: " ",
+        code: " "
+    },
 ];
 
 const CardsItems = ({image, title, description, video, code}) => {
