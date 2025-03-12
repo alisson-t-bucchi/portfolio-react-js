@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
-import WebPhoto from "../assets/images/web_photo.webp"
+import PersonalPhoto from "../assets/images/personal-photo.webp"
 
 export default function HeroSection({content: {title, role}}) {
   return (
@@ -11,7 +11,7 @@ export default function HeroSection({content: {title, role}}) {
             <h2 className="text-4xl font-bold">{title}</h2>
             <h3 className="text-2xl font-bold">{role}</h3>
             <img className="w-60 rounded-full md:hidden border-4" 
-            src={WebPhoto} 
+            src={PersonalPhoto} 
             alt="Alisson" 
             />
 
@@ -34,11 +34,11 @@ export default function HeroSection({content: {title, role}}) {
         </div>
         <div>
             <img className="w-60 rounded-full hidden md:inline border-4" 
-            src={WebPhoto} 
+            src={PersonalPhoto} 
             alt="Alisson" 
             />
         </div>
     </div>
-    </header>
+  </header>
   )
 }

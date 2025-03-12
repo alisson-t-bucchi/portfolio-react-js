@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import WorkanaLogo from "../assets/images/workana_logo.webp";
-import LogicalisLogo from "../assets/images/logicalis_logo.webp"
-import UpworkLogo from "../assets/images/upwork_logo.webp"; 
+import WorkanaLogo from "../assets/images/workana-logo.webp";
+import LogicalisLogo from "../assets/images/logicalis-logo.webp"
+import UpworkLogo from "../assets/images/upwork-logo.webp"; 
 
 const images = [
   WorkanaLogo,
