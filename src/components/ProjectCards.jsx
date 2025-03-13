@@ -89,11 +89,11 @@ const iaProjects = [
 
 const CardsItems = ({image, title, description, technologies, video, code}) => {
     return (
-    <div className="shadow-lg rounded-lg p-4 bg-lime-100">
+    <div className="shadow-lg rounded-lg p-4 bg-lime-200">
         <img src={image} alt="Project" className="rounded-md" />
         <h4 className="mt-4 text-xl font-bold">{title}</h4>
         <p className="text-l">{description}</p>
-        <p className="text-l hover:text-red-600 transition-colors duration-150 transform hover:scale-105">Tech stack: {technologies}</p>
+        <p className="text-l hover:text-red-600 transition-colors transform hover:scale-100">Tech stack: {technologies}</p>
         <div className="flex space-x-4 mt-4">
             <a href={video} target="_blank" rel="noopener noreferrer" className="bg-white px-4 py-1 rounded-lg border-2">
                 Live Preview
@@ -109,9 +109,9 @@ const CardsItems = ({image, title, description, technologies, video, code}) => {
 export default function Cards() {
     return(
     <>
-        <section id="projects">
-            <h3 className="text-3xl font-bold text-center mb-4 py-4">QA Projects</h3>
-            <div className="grid lg:grid-cols-3 lg:gap-6 md:grid-cols-2 md:gap-6">
+        <section id="projects" className="shadow-lg rounded-lg p-4 bg-lime-100">
+            <h3 className="text-3xl font-bold text-center mb-4 py-4">✅ QA Projects</h3>
+            <div className="grid lg:grid-cols-3 lg:gap-6 md:grid-cols-2 md:gap-6 mb-4">
                 {qaProjects.map((project) => (
                     <CardsItems
                     key={project.id}
@@ -122,11 +122,11 @@ export default function Cards() {
                     video={project.video}
                     code={project.code} />
                     ))}
-                </div>
+            </div>
         </section>
         
-        <section id="projects">
-            <h3 className="text-3xl font-bold text-center mb-4 py-4">IA Projects</h3>
+        <section id="projects" className="shadow-lg rounded-lg p-4 bg-lime-100 mt-12">
+            <h3 className="text-3xl font-bold text-center mb-4 py-4">🤖 IA Projects</h3>
             <div className="grid lg:grid-cols-3 lg:gap-6 md:grid-cols-2 md:gap-6">
                 {iaProjects.map((project) => (
                     <CardsItems
