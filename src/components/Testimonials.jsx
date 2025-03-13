@@ -1,4 +1,4 @@
-import Person1 from "../assets/images/patricia-moutinho.png"
+import Person1 from "../assets/images/patricia-moutinho.webp"
 
 const testimonialsData = [
   {

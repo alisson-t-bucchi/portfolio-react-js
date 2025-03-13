@@ -1,25 +1,68 @@
-import ComingSoon from "../assets/images/coming-soon.jpg"
+import ComingSoon from "../assets/images/coming-soon.webp"
+//
+import MagentoPage from "../assets/images/magento-page.webp"
+//
 import WebFormPage from "../assets/images/web-form-page.webp"
-import WebFormVideo from "../assets/videos/web-form-page.mp4"
+import WebFormSeleniumPythonVideo from "../assets/videos/web-form-selenium-python.mp4"
+//
+import CC360Page from "../assets/images/CC360.webp"
+//
+import StickerfyAutomationSeleniumPythonVideo from "../assets/videos/sitckerfy-automation-selenium-python.mp4"
+import StickerfyPage from "../assets/images/stickerfy-page.webp"
+//
+import StickerfyCypressJSVideo from "../assets/videos/stickerfy-cypress-js.mp4"
+//
 import PizzaPricePredictorApp from "../assets/images/pizza-price-predictor-app.webp"
 import PizzaPricePredictorAppVideo from "../assets/videos/pizza-price-predictor-app.mp4"
+//
+import AIChefDeCuisine from "../assets/images/ai-chef-de-cuisine.webp"
+import AIChefDeCuisineVideo from "../assets/videos/ai-chef-de-cuisine.mp4"
 
 const qaProjects = [
     {
         id: 1,
-        image: WebFormPage,
-        title: "BDD test suite for Web Form Page",
-        description: "BDD automation test for Web Form Page in Python using Selenium, Behave, and Allure Reports.",
-        video: WebFormVideo,
-        code:"https://github.com/alisson-t-bucchi/webform_selenium_behave_python.git"
+        image: MagentoPage,
+        title: "Playwright test suite for Magento Page.",
+        description: "E2E automation tests for Magento Page in JS",
+        technologies: "Plawright.", 
+        video: ComingSoon,  //criar video
+        code: "https://github.com/alisson-t-bucchi/magento-playwright-js.git"
     },
     {
         id: 2,
-        image: ComingSoon,
-        title: "Future project",
-        description: "Future project",
-        video: " ",
-        code: " "
+        image: WebFormPage,
+        title: "BDD test for Web form Page.",
+        description: "BDD automation test for Web form Page in Python with test reports.",
+        technologies: "Selenium Webdriver, Behave and Allure Reports.",
+        video: WebFormSeleniumPythonVideo,
+        code:"https://github.com/alisson-t-bucchi/webform_selenium_behave_python.git"
+    },
+    {
+        id: 3,
+        image: CC360Page,
+        title: "BDD test for Contact Center 360 Plataform.",
+        description: "BDD automation test for CC360 plataform in Java.",
+        technologies: "Selenium Webdriver, Maven, Cucumber and JUnit5.", 
+        video: ComingSoon,
+        code: "https://github.com/alisson-t-bucchi/CC360-selenium-cucumber-java.git"
+    },
+    {
+        id: 4,
+        image: StickerfyPage,
+        title: "Selenium test suite for Stickerfy Page.",
+        description: "E2E automation tests in POM pattern for Stickerfy Page in Python with test reports.",
+        technologies: "Selenium Webdriver, Pytest and HTML Reports.", 
+        video: StickerfyAutomationSeleniumPythonVideo,
+        code: "https://github.com/alisson-t-bucchi/stickerfy-selenium-python"
+    },
+    {
+        id: 5,
+        image: StickerfyPage,
+        title: "Cypress test suite for Stickerfy Page.",
+        description: "E2E automation tests for Stickerfy Page in Python with load tests and test reports.",
+        technologies: "Cypress, k6 and Allure Reports.", 
+        video: StickerfyCypressJSVideo,
+        code: "https://github.com/alisson-t-bucchi/stickerfy-cypress-js"
     },
 ];
 
@@ -27,27 +70,30 @@ const iaProjects = [
     {
       id: 1,
       image: PizzaPricePredictorApp,
-      title: "Price predictor using Machine Learning",
-      description: "Pizza price predictor in Python using Pandas, Sklearn and Streamlit libraries",
+      title: "Price predictor using Machine Learning.",
+      description: "Pizza price predictor in Python.",
+      technologies: "Pandas, Sklearn and Streamlit libraries.", 
       video: PizzaPricePredictorAppVideo ,
       code: "https://github.com/alisson-t-bucchi/predict-pizza-values-ml.git"
     },
     {
         id: 2,
-        image: ComingSoon,
-        title: "Future project",
-        description: "Future project",
-        video: " ",
-        code: " "
+        image: AIChefDeCuisine,
+        title: "Chef de cuisine with AI.",
+        description: "Recipes generator with 2 measurements systems in Python using Regex.",
+        technologies: "Cohere AI and Streamlit.",
+        video: AIChefDeCuisineVideo,
+        code: "https://github.com/alisson-t-bucchi/chef_de_cuisine_ai.git"
     },
 ];
 
-const CardsItems = ({image, title, description, video, code}) => {
+const CardsItems = ({image, title, description, technologies, video, code}) => {
     return (
     <div className="shadow-lg rounded-lg p-4 bg-lime-100">
         <img src={image} alt="Project" className="rounded-md" />
         <h4 className="mt-4 text-xl font-bold">{title}</h4>
-        <p className="text-sm">{description}</p>
+        <p className="text-l">{description}</p>
+        <p className="text-l hover:text-red-600 transition-colors duration-150 transform hover:scale-105">Tech stack: {technologies}</p>
         <div className="flex space-x-4 mt-4">
             <a href={video} target="_blank" rel="noopener noreferrer" className="bg-white px-4 py-1 rounded-lg border-2">
                 Live Preview
@@ -72,6 +118,7 @@ export default function Cards() {
                     image={project.image}
                     title={project.title}
                     description={project.description}
+                    technologies={project.technologies}
                     video={project.video}
                     code={project.code} />
                     ))}
@@ -87,6 +134,7 @@ export default function Cards() {
                     image={project.image}
                     title={project.title}
                     description={project.description}
+                    technologies={project.technologies}
                     video={project.video}
                     code={project.code} />
                     ))}
