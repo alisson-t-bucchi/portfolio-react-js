@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
-
 @theme { 
-    --font-tomorrow: "Tomorrow", sans-serif; 
+    --font-jetbrains: "JetBrains Mono", monospace; 
 } 
 
 * { 
-    font-family: var(--font-tomorrow);
+    font-family: var(--font-jetbrains);
 }
+  

@@ -22,7 +22,7 @@ export default function AboutMe() {
               👋🏻 Hi there, I am Alisson Bucchi. Dynamic IT professional holding a Computer Networking and Systems, 
               with expertise in Network Management and Programming (C, Python, Java). 
             </p>
-            <p className=" mt-4 text-xl lg:text-justify">
+            <p className="mt-4 text-xl lg:text-justify">
               I am currently Software QA Tester, and Data Integration Developer working with automated testing, data development to enhance software efficiency and scalability.
               I am in constant professional development to be a Full Stack Developer! 👨🏻‍💻🚀
             </p>
