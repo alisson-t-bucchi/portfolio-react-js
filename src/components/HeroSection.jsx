@@ -12,6 +12,7 @@ export default function HeroSection({content: {title, role}}) {
             <h3 className="text-2xl font-bold">{role}</h3>
             <img className="w-60 rounded-full md:hidden border-4" 
             src={PersonalPhoto} 
+            loading="lazy"
             alt="Alisson" 
             />
 
