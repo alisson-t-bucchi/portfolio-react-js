@@ -89,7 +89,7 @@ const iaProjects = [
 
 const CardsItems = ({image, title, description, technologies, video, code}) => {
     return (
-    <div className="shadow-lg rounded-lg p-4 bg-lime-200">
+    <div className="shadow-lg rounded-lg p-4 bg-gray-100">
         <img src={image} alt="Project" className="rounded-md" />
         <h4 className="mt-4 text-xl font-bold">{title}</h4>
         <p className="text-l">{description}</p>
@@ -109,7 +109,7 @@ const CardsItems = ({image, title, description, technologies, video, code}) => {
 export default function Cards() {
     return(
     <>
-        <section id="QAprojects" className="shadow-lg rounded-lg p-4 bg-lime-100">
+        <section id="QAprojects" className="shadow-lg rounded-lg p-4 border-1 border-black">
             <h3 className="text-3xl font-bold text-center mb-4 py-4">✅ QA Projects</h3>
             <div className="grid lg:grid-cols-3 lg:gap-6 md:grid-cols-2 md:gap-6 mb-4">
                 {qaProjects.map((project) => (
@@ -126,7 +126,7 @@ export default function Cards() {
         </section>
    
         
-        <section id="AIprojects" className="shadow-lg rounded-lg p-4 bg-lime-100 mt-12">
+        <section id="AIprojects" className="shadow-lg rounded-lg p-4 mt-12 border-1 border-black ">
             <h3 className="text-3xl font-bold text-center mb-4 py-4">🤖 IA Projects</h3>
             <div className="grid lg:grid-cols-3 lg:gap-6 md:grid-cols-2 md:gap-6">
                 {iaProjects.map((project) => (
