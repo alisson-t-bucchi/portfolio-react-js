@@ -19,7 +19,8 @@ export default function Layout({ children }) {
             </div>
             <div className={`${menuVisible ? "block" : "hidden"} space-x-6 font-bold text-2xl lg:flex flex-col lg:flex-row absolute lg:static top-16 left-0 w-full lg:w-auto bg-lime-100 lg:bg-transparent shadow-lg lg:shadow-none p-4 lg:p-0` }>
                 <a href="#about" className="hover:text-white transition-colors duration-150 transform hover:scale-125">About</a>
-                <a href="#projects" className="hover:text-white transition-colors duration-150 transform hover:scale-125">Projects</a>
+                <a href="#QAprojects" className="hover:text-white transition-colors duration-150 transform hover:scale-125">QA Projects</a>
+                <a href="#AIprojects" className="hover:text-white transition-colors duration-150 transform hover:scale-125">AI Projects</a>
                 <a href="#testimonials" className="hover:text-white transition-colors duration-150 transform hover:scale-125">Testimonials</a>
                 {/* <a href="#contact" className="hover:text-white transition-colors duration-150 transform hover:scale-125">Contact</a> */}
             </div>
