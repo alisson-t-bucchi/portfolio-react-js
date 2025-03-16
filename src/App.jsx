@@ -14,7 +14,7 @@ const heroSection = {
 
 function App() {
   return (
-    <main className="px-4 text-gray-900 bg-gradient-to-r from-lime-200 via-lime-300 to-lime-400 lg:px-30">
+    <main className="px-4 text-gray-900 bg-gradient-to-r from-lime-300 via-lime-400 to-lime-500 lg:px-30">
       <Layout>
 
         <HeroSection content={heroSection} />
