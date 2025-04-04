@@ -9,7 +9,8 @@ import TechStack from "./components/TechStack"
 
 const heroSection = {
   title: "Alisson T. Bucchi",
-  role: "Software QA & Data Developer | AI & ML Enthusiast"
+  role: "QA tester & Data Dev | Analyst Specialist", 
+  complement: "AI & ML enthusiast"
 } 
 
 function App() {
