@@ -1,3 +1,5 @@
+
+import {useEffect} from "react"
 import Layout from "./components/Layout" 
 import HeroSection from "./components/HeroSection"
 import ProjectCards from "./components/ProjectCards"
@@ -14,6 +16,15 @@ const heroSection = {
 } 
 
 function App() {
+
+  useEffect(() => {
+    document.documentElement.classList.add("scroll-smooth");
+    return () => {
+      document.documentElement.classList.remove("scroll-smooth");
+    };
+  }, 
+  []);
+
   return (
     <main className="px-4 text-gray-900 bg-gradient-to-r from-lime-300 via-lime-400 to-lime-500 lg:px-30">
       <Layout>

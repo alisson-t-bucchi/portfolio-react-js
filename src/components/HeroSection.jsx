@@ -5,7 +5,7 @@ import PersonalPhoto from "../assets/images/personal-photo.webp"
 
 export default function HeroSection({content: {title, role, complement}}) {
   return (
-  <header className="text-center py-12">
+  <header className="animate-pulse text-center py-12">
     <div className="grid lg:grid-cols-2 lg:min-h-6/12 lg:mt-8">
         <div className="flex flex-col gap-4 justify-center items-center lg:items-start">
             <h2 className="text-4xl font-bold">{title}</h2>

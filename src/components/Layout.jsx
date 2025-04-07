@@ -12,7 +12,7 @@ export default function Layout({ children }) {
 
     return (
     <>
-        <nav className="py-4 flex justify-between items-center">
+        <nav className="scroll-smooth py-4 flex justify-between items-center">
             <h1 className="text-3xl font-bold">Info & Projects</h1>
             <div className="lg:hidden" >
                 <FontAwesomeIcon icon={faBars} size="2x" onClick={toggleMenu} /> 
