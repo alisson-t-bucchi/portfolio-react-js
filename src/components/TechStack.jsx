@@ -1,3 +1,4 @@
+import { motion } from "motion/react"
 import JavaIcon from "../assets/icons/java.svg"
 import PythonIcon from "../assets/icons/python.svg"
 import JavaScriptIcon from "../assets/icons/javascript.svg"
@@ -12,6 +13,33 @@ import ScikitlearnIcon from "../assets/icons/scikitlearn.svg"
 import TensorflowIcon from "../assets/icons/tensorflow.svg"
 import RIcon from "../assets/icons/r.svg"
 import ApachehadoopIcon from "../assets/icons/apachehadoop.svg"
+
+const containerVariants = {
+  offscreen: { opacity: 0, y: 100 },
+  onscreen: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: "spring",
+      bounce: 0.3,
+      duration: 0.8,
+      delay: 1, // atraso no surgimento
+    },
+  },
+}
+
+const itemVariants = {
+  offscreen: { opacity: 0, y: 50 },
+  onscreen: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: "spring",
+      bounce: 0.2,
+      duration: 0.6,
+    },
+  },
+}
 
 const techIcons1 = [
   JavaIcon,
@@ -37,28 +65,60 @@ export default function TechStack({ children }) {
   return (
     <>
         <section className="text-left py-6">
-            <h3 className="text-3xl font-bold">My Tech Stack</h3>
-            <p className="text-lg py-4">I'm currently working with: </p>
-            <div className="flex gap-4 justify-start items-center flex-wrap overflow-x-auto">
-                {techIcons1.map((technology, key) => (
-                    <img className="w-14 h-12 object-contain"
-                    key={`technology-${key}`}
-                    src={technology}
-                    alt={`img-${key}`} />
-                    ))}
+          <h3 className="text-3xl font-bold">My Tech Stack</h3>
+          <motion.div
+          initial="offscreen"
+          whileInView="onscreen"
+          viewport={{ once: true, amount: 1 }}
+          variants={containerVariants}
+          >
+            < motion.p className="text-lg py-4" variants={itemVariants}>
+            I'm currently working with: 
+            </motion.p>
+            <div className="flex gap-4 justify-start items-center flex-wrap">
+              {techIcons1.map((technology, key) => (
+                <motion.div
+                key={key}
+                variants={itemVariants}
+                initial="offscreen"
+                whileInView="onscreen"
+                >
+                  <img className="w-14 h-12 object-contain"
+                  src={technology}
+                  alt={`img-${key}`}
+                  />
+                </motion.div>
+              ))}
             </div>
+          </motion.div>
         </section>
-    
-        <section id="tech-stack" className="text-left py-6">
-            <p className="text-lg py-4">I'm learning and interest in:</p>
-            <div className="flex gap-4 justify-start items-center flex-wrap overflow-x-auto">
-                {techIcons2.map((technology, key) => (
-                    <img className="w-14 h-12 object-contain"
-                    key={`technology-${key}`}
-                    src={technology}
-                    alt={`img-${key}`} />
-                    ))}
+
+        <section className="text-left py-6">
+          <motion.div
+          initial="offscreen"
+          whileInView="onscreen"
+          viewport={{ once: true, amount: 1 }}
+          variants={containerVariants}
+          >
+            < motion.p className="text-lg py-4" variants={itemVariants}>
+            I'm learning and interested in: 
+            </motion.p>
+            <div className="flex gap-4 justify-start items-center flex-wrap">
+              {techIcons2.map((technology, key) => (
+                <motion.div
+                key={key}
+                variants={itemVariants}
+                initial="offscreen"
+                whileInView="onscreen"
+                >
+                  <img className="w-14 h-12 object-contain"
+                  src={technology}
+                  alt={`img-${key}`}
+                  />
+                </motion.div>
+              ))}
             </div>
+          </motion.div>
         </section>
     </>
   )
