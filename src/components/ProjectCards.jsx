@@ -150,7 +150,7 @@ export default function Cards() {
     return(
     <>
         <section id="QAprojects" /* </>className="shadow-lg rounded-lg p-4" */>
-            <h3 className="text-3xl font-bold text-center mb-4 py-4">✅ QA Projects</h3>
+            <h3 className="text-3xl font-bold text-center mb-4 py-8">✅ QA Projects</h3>
             <motion.div
             className="grid lg:grid-cols-3 lg:gap-6 md:grid-cols-2 md:gap-6 mb-4 sm:grid-cols-1 gap-6"
             initial="offscreen"
@@ -178,7 +178,7 @@ export default function Cards() {
    
         
         <section id="AIprojects">
-            <h3 className="text-3xl font-bold text-center mb-4 py-4">🤖 IA Projects</h3>
+            <h3 className="text-3xl font-bold text-center mb-4 py-8">🤖 IA Projects</h3>
             <motion.div
             className="grid lg:grid-cols-3 lg:gap-6 md:grid-cols-2 md:gap-6 mb-4 sm:grid-cols-1 gap-6"
             initial="offscreen"

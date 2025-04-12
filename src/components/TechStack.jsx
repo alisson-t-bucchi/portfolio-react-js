@@ -64,62 +64,64 @@ const techIcons2 = [
 export default function TechStack({ children }) {
   return (
     <>
-        <section className="text-left py-6">
-          <h3 className="text-3xl font-bold">My Tech Stack</h3>
-          <motion.div
-          initial="offscreen"
-          whileInView="onscreen"
-          viewport={{ once: true, amount: 1 }}
-          variants={containerVariants}
-          >
-            < motion.p className="text-lg py-4" variants={itemVariants}>
-            I'm currently working with: 
-            </motion.p>
-            <div className="flex gap-4 justify-start items-center flex-wrap">
-              {techIcons1.map((technology, key) => (
-                <motion.div
-                key={key}
-                variants={itemVariants}
-                initial="offscreen"
-                whileInView="onscreen"
-                >
-                  <img className="w-14 h-12 object-contain"
-                  src={technology}
-                  alt={`img-${key}`}
-                  />
-                </motion.div>
+     <h3 className="text-3xl font-bold">My Tech Stack</h3>
+     <div className="grid lg:grid-cols-2 items-stretch gap-6">
+      <section className="flex flex-col h-ful text-left py-4">
+        <motion.div
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true, amount: 1 }}
+        variants={containerVariants}
+        >
+          < motion.p className="text-lg py-4" variants={itemVariants}>
+          I'm currently working with: 
+          </motion.p>
+          <div className="flex gap-4 justify-start items-center flex-wrap">
+            {techIcons1.map((technology, key) => (
+              <motion.div
+              key={key}
+              variants={itemVariants}
+              initial="offscreen"
+              whileInView="onscreen"
+              >
+                <img className="w-14 h-12 object-contain"
+                src={technology}
+                alt={`img-${key}`}
+                />
+              </motion.div>
               ))}
-            </div>
-          </motion.div>
-        </section>
+          </div>
+        </motion.div>
+      </section>
 
-        <section className="text-left py-6">
-          <motion.div
-          initial="offscreen"
-          whileInView="onscreen"
-          viewport={{ once: true, amount: 1 }}
-          variants={containerVariants}
-          >
-            < motion.p className="text-lg py-4" variants={itemVariants}>
-            I'm learning and interested in: 
-            </motion.p>
-            <div className="flex gap-4 justify-start items-center flex-wrap">
-              {techIcons2.map((technology, key) => (
-                <motion.div
-                key={key}
-                variants={itemVariants}
-                initial="offscreen"
-                whileInView="onscreen"
-                >
-                  <img className="w-14 h-12 object-contain"
-                  src={technology}
-                  alt={`img-${key}`}
-                  />
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-        </section>
+      <section className="flex flex-col h-ful text-left py-4">
+        <motion.div
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true, amount: 1 }}
+        variants={containerVariants}
+        >
+          < motion.p className="text-lg py-4" variants={itemVariants}>
+          I'm learning and interested in: 
+          </motion.p>
+          <div className="flex gap-4 justify-start items-center flex-wrap">
+            {techIcons2.map((technology, key) => (
+              <motion.div
+              key={key}
+              variants={itemVariants}
+              initial="offscreen"
+              whileInView="onscreen"
+              >
+                <img className="w-14 h-12 object-contain"
+                src={technology}
+                alt={`img-${key}`}
+                />
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+      </section>
+    </div>
     </>
   )
 }
