@@ -23,7 +23,7 @@ const containerVariants = {
       type: "spring",
       bounce: 0.3,
       duration: 0.8,
-      delay: 1, // atraso no surgimento
+      delay: 1
     },
   },
 }
