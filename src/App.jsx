@@ -11,7 +11,7 @@ import TechStack from "./components/TechStack"
 
 const heroSection = {
   title: "Alisson T. Bucchi",
-  role: "QA tester & Data Dev | Analyst Specialist", 
+  role: "QA Engineer & Data Specialist", 
   complement: "AI & ML enthusiast"
 } 
 

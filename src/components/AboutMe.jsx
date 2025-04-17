@@ -6,7 +6,7 @@ export default function AboutMe() {
         <section id="about" className="text-center py-8">
         <h3 className="text-3xl font-bold py-8">About Me</h3>
         <div className="px-6 grid lg:grid-cols-2">
-          <div className="flex justify-center mt-4">
+          <div className="flex justify-center items-center gap-4 mt-4 px-4">
           <DotLottieReact
             src="https://lottie.host/729f57c3-9789-4a82-bf57-16b255b32fcf/tYCKJ4OcoA.lottie"
             loop
@@ -26,11 +26,11 @@ export default function AboutMe() {
           <div>
             <p className="mt-4 text-xl lg:text-justify">
               👋🏻 Hi there, I am Alisson Bucchi. Dynamic IT professional holding a Computer Networking and Systems, 
-              with expertise in Network Management and Programming (C, Python, Java). 
+              with expertise in Programming, Software QA Tester and Data Analyst. 
             </p>
             <p className="mt-4 text-xl lg:text-justify">
-              I am currently Software QA Tester, and Data Integration Developer working with automated testing, data development to enhance software efficiency and scalability.
-              I am in constant professional development to be a Full Stack Developer! 👨🏻‍💻🚀
+              I am currently QA Tester Engineer, and Data Specialist working with testing and, data development to enhance software efficiency.
+              I am in constant professional development to be a Full Stack Developer and Data Scientist! 👨🏻‍💻🚀
             </p>
             <p className="mt-4 text-xl lg:text-justify">
             Fluent in English, French and Italian, I'm proactive, multitasking and work well in a team. 
