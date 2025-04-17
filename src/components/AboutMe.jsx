@@ -11,13 +11,11 @@ export default function AboutMe() {
             src="https://lottie.host/729f57c3-9789-4a82-bf57-16b255b32fcf/tYCKJ4OcoA.lottie"
             loop
             autoplay
-            style={{ width: 780, height: 390 }} // aqui define o tamanho
           />
           <DotLottieReact
             src="https://lottie.host/156b7934-4d85-4543-8896-62257afb0f6e/7hdW5Af13M.lottie"
             loop
             autoplay
-            style={{ width: 780, height: 390 }} // aqui define o tamanho
           />
 
             {/* <img className="h-60 rounded-xl" 
