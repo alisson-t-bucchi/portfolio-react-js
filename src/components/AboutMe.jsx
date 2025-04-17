@@ -8,15 +8,11 @@ export default function AboutMe() {
         <div className="px-6 grid lg:grid-cols-2">
           <div className="flex justify-center items-center gap-4 mt-4 px-4">
           <DotLottieReact
-            src="https://lottie.host/729f57c3-9789-4a82-bf57-16b255b32fcf/tYCKJ4OcoA.lottie"
+            src="https://lottie.host/a2cfb722-fc1d-41c8-aa8c-7f01ec72fda5/cIm6M6yS5T.lottie"
             loop
             autoplay
           />
-          <DotLottieReact
-            src="https://lottie.host/156b7934-4d85-4543-8896-62257afb0f6e/7hdW5Af13M.lottie"
-            loop
-            autoplay
-          />
+        
 
             {/* <img className="h-60 rounded-xl" 
             src={BackgroundImg} 
