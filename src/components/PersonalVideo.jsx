@@ -10,7 +10,7 @@ export default function PersonalVideo() {
     <div ref={ref}>
       {inView ? (
         <video className="w-90 rounded-full md:inline border-0"
-          src="public/videos/ai-personal-video.mp4"
+          src="videos/ai-personal-video.mp4"
           autoPlay
           muted
           playsInline
