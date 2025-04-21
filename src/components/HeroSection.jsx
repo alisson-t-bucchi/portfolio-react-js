@@ -12,7 +12,7 @@ export default function HeroSection({content: {title, role, complement}}) {
             <h3 className="text-2xl font-bold">{role}</h3>
             <h3 className="text-xl font-bold">{complement}</h3>
             <video
-            className="md:hidden"
+            className="w-75 rounded-full md:hidden border-4"
             src={PersonalVideo}
             autoPlay
             muted
@@ -38,7 +38,7 @@ export default function HeroSection({content: {title, role, complement}}) {
             </div>
         </div>
         <div>
-        <video className="w-95 rounded-4xl hidden md:inline border-4" 
+        <video className="w-95 rounded-full hidden md:inline border-4" 
             src={PersonalVideo} 
             alt="Alisson" 
             autoPlay
