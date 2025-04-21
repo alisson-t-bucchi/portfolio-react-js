@@ -15,14 +15,14 @@ export default function PersonalVideo() {
           muted
           playsInline
           preload="metadata"
-          poster="public/ai-personal-video.webp"
+          poster="/ai-personal-video.webp"
         >
           Seu navegador não suporta o vídeo.
         </video>
       ) : (
         <img
         className="w-80 rounded-full md:inline"
-        src="public/ai-personal-image.webp"
+        src="/ai-personal-image.webp"
         alt="Pré-visualização do vídeo"
         />
       )}
