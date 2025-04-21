@@ -14,6 +14,10 @@ export default function HeroSection({content: {title, role, complement}}) {
             <video
             className="md:hidden"
             src={PersonalVideo}
+            autoPlay
+            muted
+            playsInline
+            preload="none"
             ></video>
 
             <div className="py-3 lg:flex space-x-6">
