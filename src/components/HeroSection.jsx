@@ -18,6 +18,7 @@ export default function HeroSection({content: {title, role, complement}}) {
             muted
             playsInline
             preload="none"
+            poster="../assets/images/ai-personal-image.webp"
             ></video>
 
             <div className="py-3 lg:flex space-x-6">
@@ -45,6 +46,7 @@ export default function HeroSection({content: {title, role, complement}}) {
             muted
             playsInline
             preload="none"
+            poster="../assets/images/ai-personal-image.webp"
             />
             <p> Hello, hello, tech people! </p>
         </div>
