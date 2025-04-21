@@ -12,8 +12,6 @@ export default function AboutMe() {
             loop
             autoplay
           />
-        
-
             {/* <img className="h-60 rounded-xl" 
             src={BackgroundImg} 
             alt="backgroundd image" 

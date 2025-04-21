@@ -61,7 +61,13 @@
 
 .animated-bg {
     overflow-x: hidden; /* Evita rolagem lateral indesejada */
-    background: linear-gradient(315deg, rgba(230, 204, 0, 1) 13%, rgba(255, 255, 255, 1) 38%, rgba(128, 128, 128, 1) 68%, rgba(30, 35, 38, 1) 98%);
+    background: linear-gradient(
+        315deg, 
+        #ccff33 13%, 
+        #9ef01a 38%, 
+        #70e000 68%,
+        #38b000 98%
+        );
     animation: gradient 5s ease infinite;
     background-size: 400% 400%;
 }  

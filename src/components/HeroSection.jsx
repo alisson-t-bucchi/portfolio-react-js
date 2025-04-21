@@ -1,21 +1,20 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
-import PersonalPhoto from "../assets/images/personal-photo.webp"
+import PersonalVideo from "../assets/videos/ai-personal-video.mp4"
 
 export default function HeroSection({content: {title, role, complement}}) {
   return (
-  <header className="animate-pulse text-center py-18">
+  <header className="text-center py-18">
     <div className="grid lg:grid-cols-2 lg:min-h-6/12 lg:mt-8">
         <div className="flex flex-col gap-4 justify-center items-center lg:items-start">
             <h2 className="text-4xl font-bold">{title}</h2>
             <h3 className="text-2xl font-bold">{role}</h3>
             <h3 className="text-xl font-bold">{complement}</h3>
-            <img className="w-60 rounded-full md:hidden border-4" 
-            src={PersonalPhoto} 
-            loading="lazy"
-            alt="Alisson" 
-            />
+            <video
+            className="md:hidden"
+            src={PersonalVideo}
+            ></video>
 
             <div className="py-3 lg:flex space-x-6">
               <a href="https://www.linkedin.com/in/alisson-tex-bucchi/" target="_blank" rel="noopener noreferrer">
@@ -35,10 +34,15 @@ export default function HeroSection({content: {title, role, complement}}) {
             </div>
         </div>
         <div>
-            <img className="w-60 rounded-full hidden md:inline border-4" 
-            src={PersonalPhoto} 
+        <video className="w-95 rounded-4xl hidden md:inline border-4" 
+            src={PersonalVideo} 
             alt="Alisson" 
+            autoPlay
+            muted
+            playsInline
+            preload="none"
             />
+            <p> Hello, hello, tech people! </p>
         </div>
     </div>
   </header>
