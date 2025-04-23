@@ -19,6 +19,20 @@ import PizzaPricePredictorAppVideo from "../assets/videos/pizza-price-predictor-
 //
 import AIChefDeCuisine from "../assets/images/ai-chef-de-cuisine.webp"
 import AIChefDeCuisineVideo from "../assets/videos/ai-chef-de-cuisine.mp4"
+//
+//import icons//
+import JavaScriptIcon from "../assets/icons/javascript-original.svg"
+import PlaywrightIcon from "../assets/icons/playwright-original.svg"
+import SeleniumIcon from "../assets/icons/selenium-original.svg"
+import PythonIcon from "../assets/icons/python-original.svg"
+import CucumberIcon from "../assets/icons/cucumber-plain.svg"
+import JunitIcon from "../assets/icons/junit-original-wordmark.svg"
+import AllureIcon from "../assets/icons/allure-framework.svg"
+import JavaIcon from "../assets/icons/java-original.svg"
+import PytestIcon from "../assets/icons/pytest-original-wordmark.svg"
+import CypressIcon from "../assets/icons/cypressio-original.svg"
+import K6Icon from "../assets/icons/k6-original.svg"
+
 
 const containerVariants = {
     offscreen: {
@@ -60,7 +74,10 @@ const qaProjects = [
         image: MagentoPage,
         title: "Playwright test suite for Magento Page.",
         description: "E2E automation tests for Magento Page in JS",
-        technologies: "Playright.",
+        icons: [
+            { icon: JavaScriptIcon, name: "JavaScript" },
+            { icon: PlaywrightIcon, name: "Playwright" },
+        ], 
         video: ComingSoon,  //criar video
         code: "https://github.com/alisson-t-bucchi/magento-playwright-js.git", 
     },
@@ -69,7 +86,12 @@ const qaProjects = [
         image: WebFormPage,
         title: "BDD test for Web form Page.",
         description: "BDD automation test for Web form Page in Python with test reports.",
-        technologies: "Selenium Webdriver, Behave and Allure Reports.",
+        icons: [
+            { icon: PythonIcon, name: "Python" },
+            { icon: SeleniumIcon, name: "Selenium" },
+            { icon: CucumberIcon, name: "Cucumber" },
+            { icon: AllureIcon, name: "Allure" },
+        ], 
         video: WebFormSeleniumPythonVideo,
         code:"https://github.com/alisson-t-bucchi/webform_selenium_behave_python.git"
     },
@@ -78,7 +100,12 @@ const qaProjects = [
         image: CC360Page,
         title: "BDD test for Contact Center 360 Plataform.",
         description: "BDD automation test for CC360 plataform in Java.",
-        technologies: "Selenium Webdriver, Maven, Cucumber and JUnit5.", 
+        icons: [
+            { icon: JavaIcon, name: "Java" },
+            { icon: SeleniumIcon, name: "Selenium" },
+            { icon: CucumberIcon, name: "Cucumber" },
+            { icon: JunitIcon, name: "Junit" }, 
+        ],
         video: ComingSoon,
         code: "https://github.com/alisson-t-bucchi/CC360-selenium-cucumber-java.git"
     },
@@ -87,7 +114,11 @@ const qaProjects = [
         image: StickerfyPage,
         title: "Selenium test suite for Stickerfy Page.",
         description: "E2E automation tests in POM pattern for Stickerfy Page in Python with test reports.",
-        technologies: "Selenium Webdriver, Pytest and HTML Reports.", 
+        icons: [
+            { icon: PythonIcon, name: "Python" },
+            { icon: SeleniumIcon, name: "Selenium" },
+            { icon: PytestIcon, name: "Pytest" }, 
+        ],
         video: StickerfyAutomationSeleniumPythonVideo,
         code: "https://github.com/alisson-t-bucchi/stickerfy-selenium-python"
     },
@@ -95,8 +126,14 @@ const qaProjects = [
         id: 5,
         image: StickerfyPage,
         title: "Cypress test suite for Stickerfy Page.",
-        description: "E2E automation tests for Stickerfy Page in Python with load tests and test reports.",
-        technologies: "Cypress, k6 and Allure Reports.", 
+        description: "E2E automation tests for Stickerfy Page in JS with load tests and test reports.",
+        icons: [
+            { icon: JavaScriptIcon, name: "JavaScript" },
+            { icon: CypressIcon, name: "Cypress" },
+            { icon: AllureIcon, name: "Allure" },
+            { icon: K6Icon, name: "K6" },
+
+        ], 
         video: StickerfyCypressJSVideo,
         code: "https://github.com/alisson-t-bucchi/stickerfy-cypress-js"
     },
@@ -123,16 +160,24 @@ const iaProjects = [
     },
 ];
 
-const CardsItems = ({image, title, description, technologies, video, code}) => {
+const CardsItems = ({image, title, description, icons, video, code}) => {
     return (
     <div className="shadow-lg rounded-lg p-4 bg-gray-100">
         <img src={image} alt="Project" className="rounded-md" />
         <h4 className="mt-4 text-xl font-bold">{title}</h4>
         <p className="text-l">{description}</p>
-        {technologies && (
-            <p className="text-l hover:text-red-600 transition-colors transform hover:scale-100">
-                Tech stack: {technologies}
-            </p>
+        {icons && Array.isArray(icons) && (
+            <div className="flex flex-wrap gap-2 mt-4 font-bold"> Tech Stack:
+                {icons.map(({ icon, name }, idx) => (
+                    <img
+                        key={idx}
+                        src={icon}
+                        alt={name}
+                        title={name}
+                        className="w-12 h-12 p-1 m-1"
+                    />
+                ))}
+            </div>
         )}
         <div className="flex space-x-4 mt-4">
             <a href={video} target="_blank" rel="noopener noreferrer" className="bg-white px-4 py-1 rounded-lg border-2">

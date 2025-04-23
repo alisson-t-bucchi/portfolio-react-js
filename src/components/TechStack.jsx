@@ -1,18 +1,19 @@
+//icons origin: https://github.com/devicons/devicon/tree/master/icons
 import { motion } from "motion/react"
-import JavaIcon from "../assets/icons/java.svg"
-import PythonIcon from "../assets/icons/python.svg"
-import JavaScriptIcon from "../assets/icons/javascript.svg"
-import SeleniumIcon from "../assets/icons/selenium.svg"
-import CypressIcon from "../assets/icons/cypress.svg"
-import MySQLIcon from "../assets/icons/mysql.svg"
-import PostmanIcon from "../assets/icons/postman.svg"
-import PowerBIIcon from "../assets/icons/power-bi.svg"
-import PostgreSQLIcon from "../assets/icons/postgresql.svg"
-import AWSIcon from "../assets/icons/amazonwebservices.svg"
-import ScikitlearnIcon from "../assets/icons/scikitlearn.svg"
-import TensorflowIcon from "../assets/icons/tensorflow.svg"
-import RIcon from "../assets/icons/r.svg"
-import ApachehadoopIcon from "../assets/icons/apachehadoop.svg"
+import JavaIcon from "../assets/icons/java-original.svg"
+import PythonIcon from "../assets/icons/python-original.svg"
+import JavaScriptIcon from "../assets/icons/javascript-original.svg"
+import SeleniumIcon from "../assets/icons/selenium-original.svg"
+import CypressIcon from "../assets/icons/cypressio-original.svg"
+import MySQLIcon from "../assets/icons/mysql-original-wordmark.svg"
+import PostmanIcon from "../assets/icons/postman-original.svg"
+import PowerBIIcon from "../assets/icons/power-bi-icon.svg"
+import PostgreSQLIcon from "../assets/icons/postgresql-original-wordmark.svg"
+import AWSIcon from "../assets/icons/amazonwebservices-original-wordmark.svg"
+import ScikitlearnIcon from "../assets/icons/scikitlearn-original.svg"
+import TensorflowIcon from "../assets/icons/tensorflow-original.svg"
+import RIcon from "../assets/icons/r-original.svg"
+import ApacheSparkIcon from "../assets/icons/apachespark-original-wordmark.svg"
 
 const containerVariants = {
   offscreen: { opacity: 0, y: 100 },
@@ -55,7 +56,7 @@ const techIcons1 = [
 const techIcons2 = [
   RIcon,
   PostgreSQLIcon,
-  ApachehadoopIcon,
+  ApacheSparkIcon,
   AWSIcon,
   ScikitlearnIcon,
   TensorflowIcon
