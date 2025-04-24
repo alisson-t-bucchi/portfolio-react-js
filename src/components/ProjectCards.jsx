@@ -32,6 +32,10 @@ import JavaIcon from "../assets/icons/java-original.svg"
 import PytestIcon from "../assets/icons/pytest-original-wordmark.svg"
 import CypressIcon from "../assets/icons/cypressio-original.svg"
 import K6Icon from "../assets/icons/k6-original.svg"
+import ScikitlearnIcon from "../assets/icons/scikitlearn-original.svg"
+import StreamlitIcon from "../assets/icons/streamlit-original-wordmark.svg"
+import PandasIcon from "../assets/icons/pandas-original-wordmark.svg"
+import CohereIcon from "../assets/icons/cohere-color.svg"
 
 
 const containerVariants = {
@@ -104,7 +108,7 @@ const qaProjects = [
             { icon: JavaIcon, name: "Java" },
             { icon: SeleniumIcon, name: "Selenium" },
             { icon: CucumberIcon, name: "Cucumber" },
-            { icon: JunitIcon, name: "Junit" }, 
+            { icon: JunitIcon, name: "Junit 5" }, 
         ],
         video: ComingSoon,
         code: "https://github.com/alisson-t-bucchi/CC360-selenium-cucumber-java.git"
@@ -130,7 +134,7 @@ const qaProjects = [
         icons: [
             { icon: JavaScriptIcon, name: "JavaScript" },
             { icon: CypressIcon, name: "Cypress" },
-            { icon: AllureIcon, name: "Allure" },
+            { icon: AllureIcon, name: "Allure Reports" },
             { icon: K6Icon, name: "K6" },
 
         ], 
@@ -145,7 +149,12 @@ const iaProjects = [
       image: PizzaPricePredictorApp,
       title: "Price predictor using Machine Learning.",
       description: "Pizza price predictor in Python.",
-      technologies: "Pandas, Sklearn and Streamlit libraries.", 
+      icons: [
+        { icon: PythonIcon, name: "Python" },
+        { icon: PandasIcon, name: "Pandas" },
+        { icon: ScikitlearnIcon, name: "Scikilearn" },
+        { icon: StreamlitIcon, name: "Streamlit" },
+    ],  
       video: PizzaPricePredictorAppVideo ,
       code: "https://github.com/alisson-t-bucchi/predict-pizza-values-ml.git"
     },
@@ -155,6 +164,11 @@ const iaProjects = [
         title: "Chef de cuisine with AI.",
         description: "Recipes generator with 2 measurements systems in Python using Regex.",
         technologies: "Cohere AI and Streamlit.",
+        icons: [
+            { icon: PythonIcon, name: "Python" },
+            { icon: CohereIcon, name: "Cohere" },
+            { icon: StreamlitIcon, name: "Streamlit" },
+        ],  
         video: AIChefDeCuisineVideo,
         code: "https://github.com/alisson-t-bucchi/chef_de_cuisine_ai.git"
     },
@@ -166,8 +180,9 @@ const CardsItems = ({image, title, description, icons, video, code}) => {
         <img src={image} alt="Project" className="rounded-md" />
         <h4 className="mt-4 text-xl font-bold">{title}</h4>
         <p className="text-l">{description}</p>
+        <p className="mt-1 text-l font-bold"> Tech Stack: </p>
         {icons && Array.isArray(icons) && (
-            <div className="flex flex-wrap gap-2 mt-4 font-bold"> Tech Stack:
+            <div className="flex flex-wrap gap-2 mt-4 font-bold">
                 {icons.map(({ icon, name }, idx) => (
                     <img
                         key={idx}
