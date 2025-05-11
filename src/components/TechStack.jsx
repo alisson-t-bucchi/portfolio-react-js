@@ -124,13 +124,6 @@ export default function TechStack({ children }) {
           </div>
         </motion.div>
       </section>
-      <motion.a
-      className="text-black touch:cursor-none sm:cursor-pointer flex justify-center items-center mt-4 sm:ml-auto"
-      animate={{ y: [0, -50, 0] }}
-      transition={{ duration: 3, repeat: Infinity }}
-      >
-        <FontAwesomeIcon icon={faArrowDown} size="2x"/>
-      </motion.a>
     </div>
     </>
   )

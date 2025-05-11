@@ -2,6 +2,8 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; 
 import { faBars } from "@fortawesome/free-solid-svg-icons"; 
 import { faInstagram, faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import ScrollDinamicIndicator from "../components/ScrollDinamicIndicator";
+
 
 export default function Layout({ children }) {
     const [menuVisible, setMenuVisible] = useState(false);
@@ -10,10 +12,11 @@ export default function Layout({ children }) {
       setMenuVisible(!menuVisible);
     };
 
+
     return (
     <>
         <nav className="scroll-smooth py-4 flex justify-between items-center lg:px-12">
-            <h1 className="text-3xl font-bold">Info & Projects</h1>
+            <h1 className="text-3xl font-bold">My Portfolio</h1>
             <div className="lg:hidden" >
                 <FontAwesomeIcon icon={faBars} size="2x" onClick={toggleMenu} /> 
             </div>
@@ -27,6 +30,8 @@ export default function Layout({ children }) {
         </nav>
     
     {children}
+
+    <ScrollDinamicIndicator />
 
         <footer className="py-15 body-font">
             <div className="px-5 py-5 mx-auto flex flex-col items-center justify-center">
