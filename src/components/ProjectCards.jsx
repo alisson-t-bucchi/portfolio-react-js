@@ -117,7 +117,7 @@ const qaProjects = [
         id: 4,
         image: StickerfyPage,
         title: "Selenium test suite for Stickerfy Page.",
-        description: "E2E automation tests in POM pattern for Stickerfy Page in Python with test reports.",
+        description: "E2E automation tests in POM pattern for Stickerfy Page in Python with Pytest HTML Reporter.",
         icons: [
             { icon: PythonIcon, name: "Python" },
             { icon: SeleniumIcon, name: "Selenium" },
@@ -210,7 +210,7 @@ export default function Cards() {
     return(
     <>
         <section id="QAprojects" /* </>className="shadow-lg rounded-lg p-4" */>
-            <h3 className="text-3xl font-bold text-center mb-4 py-8">✅ QA Projects</h3>
+            <h3 className="text-3xl font-black text-center mb-4 py-8">✅ QA Projects</h3>
             <motion.div
             className="grid lg:grid-cols-3 lg:gap-6 md:grid-cols-2 md:gap-6 mb-4 sm:grid-cols-1 gap-6"
             initial="offscreen"
@@ -238,7 +238,7 @@ export default function Cards() {
    
         
         <section id="AIprojects">
-            <h3 className="text-3xl font-bold text-center mb-4 py-8">🤖 IA Projects</h3>
+            <h3 className="text-3xl font-black text-center mb-4 py-8">🤖 IA Projects</h3>
             <motion.div
             className="grid lg:grid-cols-3 lg:gap-6 md:grid-cols-2 md:gap-6 mb-4 sm:grid-cols-1 gap-6"
             initial="offscreen"

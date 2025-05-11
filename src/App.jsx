@@ -10,8 +10,11 @@ import TechStack from "./components/TechStack"
 
 const heroSection = {
   title: "Alisson T. Bucchi",
-  role: "QA Engineer & Data Specialist", 
-  complement: "AI & ML enthusiast"
+  roleLines: [
+    "QA Engineer & Data Specialist",
+    "Full Stack Dev in progress...", 
+    "AI & ML enthusiast"
+  ]
 } 
 
 function App() {
@@ -25,7 +28,7 @@ function App() {
   []);
 
   return (
-    <main className="px-4 bg-gradient-to-b from-lime-300 via-lime-400 to-lime-500 text-gray-900 lg:px-30">
+    <main className=" bg-gradient-to-r from-lime-300 via-lime-400 to-lime-500 text-gray-900 p-4">
       <Layout>
 
         <HeroSection content={heroSection} />

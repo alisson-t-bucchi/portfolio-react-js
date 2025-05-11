@@ -33,7 +33,7 @@ const testimonialsData = [
     return (
       <section className="body-font">
         <div className="container px-5 py-24 mx-auto">
-          <h1 className="text-3xl body-font font-bold mb-12 text-center">
+          <h1 className="text-3xl body-font font-black mb-12 text-center">
             Testimonials
           </h1>
           <div className="flex flex-wrap -m-4">

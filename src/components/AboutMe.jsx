@@ -3,8 +3,8 @@ import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 export default function AboutMe() {
     return (
-        <section id="about" className="text-center py-8">
-        <h3 className="text-3xl font-bold py-8">About Me</h3>
+        <section id="about" className="text-center py-8 lg:px-12">
+        <h3 className="text-3xl font-black py-8">About Me</h3>
         <div className="px-6 grid lg:grid-cols-2">
           <div className="flex justify-center items-center gap-4 mt-4 px-4">
           <DotLottieReact

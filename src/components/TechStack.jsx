@@ -14,6 +14,8 @@ import ScikitlearnIcon from "../assets/icons/scikitlearn-original.svg"
 import TensorflowIcon from "../assets/icons/tensorflow-original.svg"
 import RIcon from "../assets/icons/r-original.svg"
 import ApacheSparkIcon from "../assets/icons/apachespark-original-wordmark.svg"
+import { faArrowDown } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const containerVariants = {
   offscreen: { opacity: 0, y: 100 },
@@ -65,7 +67,7 @@ const techIcons2 = [
 export default function TechStack({ children }) {
   return (
     <>
-     <h3 className="text-3xl font-bold">My Tech Stack</h3>
+     <h3 className="text-3xl font-bold lg:px-12 px-4">My Tech Stack</h3>
      <div className="grid lg:grid-cols-2 items-stretch gap-6">
       <section className="flex flex-col h-ful text-left py-4">
         <motion.div
@@ -74,10 +76,10 @@ export default function TechStack({ children }) {
         viewport={{ once: true, amount: 1 }}
         variants={containerVariants}
         >
-          < motion.p className="text-lg py-4" variants={itemVariants}>
+          < motion.p className="text-lg py-4 px-4 lg:px-12" variants={itemVariants}>
           I'm currently working with: 
           </motion.p>
-          <div className="flex gap-4 justify-start items-center flex-wrap">
+          <div className="flex gap-4 justify-start items-center flex-wrap lg:px-12 px-4">
             {techIcons1.map((technology, key) => (
               <motion.div
               key={key}
@@ -102,10 +104,10 @@ export default function TechStack({ children }) {
         viewport={{ once: true, amount: 1 }}
         variants={containerVariants}
         >
-          < motion.p className="text-lg py-4" variants={itemVariants}>
+          < motion.p className="text-lg py-4 px-4" variants={itemVariants}>
           I'm learning and interested in: 
           </motion.p>
-          <div className="flex gap-4 justify-start items-center flex-wrap">
+          <div className="flex gap-4 justify-start items-center flex-wra4">
             {techIcons2.map((technology, key) => (
               <motion.div
               key={key}
@@ -122,6 +124,13 @@ export default function TechStack({ children }) {
           </div>
         </motion.div>
       </section>
+      <motion.a
+      className="text-black touch:cursor-none sm:cursor-pointer flex justify-center items-center mt-4 sm:ml-auto"
+      animate={{ y: [0, -50, 0] }}
+      transition={{ duration: 3, repeat: Infinity }}
+      >
+        <FontAwesomeIcon icon={faArrowDown} size="2x"/>
+      </motion.a>
     </div>
     </>
   )

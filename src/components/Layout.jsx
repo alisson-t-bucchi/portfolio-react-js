@@ -12,7 +12,7 @@ export default function Layout({ children }) {
 
     return (
     <>
-        <nav className="scroll-smooth py-4 flex justify-between items-center">
+        <nav className="scroll-smooth py-4 flex justify-between items-center lg:px-12">
             <h1 className="text-3xl font-bold">Info & Projects</h1>
             <div className="lg:hidden" >
                 <FontAwesomeIcon icon={faBars} size="2x" onClick={toggleMenu} /> 
@@ -31,7 +31,7 @@ export default function Layout({ children }) {
         <footer className="py-15 body-font">
             <div className="px-5 py-5 mx-auto flex flex-col items-center justify-center">
                 <a className="flex title-font font-medium items-center justify-center">
-                    <span className="ml-3 text-xl">© 2024 Website MIT Licensed.</span>
+                    <span className="ml-3 text-2xl">© 2024 Website MIT Licensed.</span>
                 </a>
                 <div className="flex justify-center mt-4 gap-x-4">
                     <a href="https://www.linkedin.com/in/alisson-tex-bucchi/" target="_blank" rel="noopener noreferrer">
