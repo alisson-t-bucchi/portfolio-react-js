@@ -58,6 +58,7 @@ export default function HeroSection({content: {title, roleLines}}) {
         <PersonalVideo />
         <p className="text-lg text-gray-900 font-medium">Hello, hello, tech people! </p>
       </div>
+      
     </div>
   </header>
   )

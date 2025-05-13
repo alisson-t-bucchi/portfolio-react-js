@@ -14,8 +14,7 @@ import StickerfyPage from "../assets/images/stickerfy-page.webp"
 //
 import StickerfyCypressJSVideo from "../assets/videos/stickerfy-cypress-js.mp4"
 //
-import PizzaPricePredictorApp from "../assets/images/pizza-price-predictor-app.webp"
-import PizzaPricePredictorAppVideo from "../assets/videos/pizza-price-predictor-app.mp4"
+import CostOfLivingPredictor from "../assets/images/cost-of-living-ai.webp"
 //
 import AIChefDeCuisine from "../assets/images/ai-chef-de-cuisine.webp"
 import AIChefDeCuisineVideo from "../assets/videos/ai-chef-de-cuisine.mp4"
@@ -146,17 +145,17 @@ const qaProjects = [
 const iaProjects = [
     {
       id: 1,
-      image: PizzaPricePredictorApp,
-      title: "Price predictor using Machine Learning.",
-      description: "Pizza price predictor in Python.",
+      image: CostOfLivingPredictor,
+      title: "Global cost of living predictor using Machine Learning.",
+      description: "Cost of living for country and city predictor in Python.",
       icons: [
         { icon: PythonIcon, name: "Python" },
         { icon: PandasIcon, name: "Pandas" },
         { icon: ScikitlearnIcon, name: "Scikilearn" },
         { icon: StreamlitIcon, name: "Streamlit" },
     ],  
-      video: PizzaPricePredictorAppVideo ,
-      code: "https://github.com/alisson-t-bucchi/predict-pizza-values-ml.git"
+      video: ComingSoon,
+      code: "https://github.com/alisson-t-bucchi/cost-of-living-ai-ml.git"
     },
     {
         id: 2,
