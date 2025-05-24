@@ -1,3 +1,4 @@
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; 
 import { faBars } from "@fortawesome/free-solid-svg-icons"; 
@@ -51,6 +52,7 @@ export default function Layout({ children }) {
                 </div>
             </div>
         </footer>
+        <SpeedInsights />
     </>
   )
 }
