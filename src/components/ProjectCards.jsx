@@ -175,7 +175,7 @@ const iaProjects = [
 
 const CardsItems = ({image, title, description, icons, video, code}) => {
     return (
-    <div className="shadow-lg rounded-lg p-4 bg-gray-100">
+    <div className="shadow-lg rounded-lg p-6 bg-gray-100">
         <img src={image} alt="Project" className="rounded-md" />
         <h4 className="mt-4 text-xl font-bold">{title}</h4>
         <p className="text-l">{description}</p>
@@ -208,8 +208,9 @@ const CardsItems = ({image, title, description, icons, video, code}) => {
 export default function Cards() {      
     return(
     <>
-        <section id="QAprojects" /* </>className="shadow-lg rounded-lg p-4" */>
-            <h3 className="text-3xl font-black text-center mb-4 py-8">✅ QA Projects</h3>
+        <section id="qa" /* </>className="shadow-lg rounded-lg p-4" */>
+        <h3 className="text-3xl font-black text-center mb-4 py-8">Projects</h3>
+            <h3 className="text-2xl font-black text-center mb-4 py-8">🧪 Quality Assurance</h3>
             <motion.div
             className="grid lg:grid-cols-3 lg:gap-6 md:grid-cols-2 md:gap-6 mb-4 sm:grid-cols-1 gap-6"
             initial="offscreen"
@@ -236,8 +237,8 @@ export default function Cards() {
         </section>
    
         
-        <section id="AIprojects">
-            <h3 className="text-3xl font-black text-center mb-4 py-8">🤖 IA Projects</h3>
+        <section id="ai-dataviz" className="shadow-lg rounded-lg p-4">
+            <h3 className="text-2xl font-black text-center mb-4 py-8">🧠 AI & Data Visual 📊</h3>
             <motion.div
             className="grid lg:grid-cols-3 lg:gap-6 md:grid-cols-2 md:gap-6 mb-4 sm:grid-cols-1 gap-6"
             initial="offscreen"
@@ -262,6 +263,29 @@ export default function Cards() {
                     ))}
             </motion.div>
         </section>
+
+        <section id="fullstack" className="shadow-lg rounded-lg p-4">
+            <h3 className="text-2xl font-black text-center mb-4 py-8">🧩 Full-Stack Apps</h3>
+            <motion.div
+            className="grid lg:grid-cols-3 lg:gap-6 md:grid-cols-2 md:gap-6 mb-4 sm:grid-cols-1 gap-6"
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={{ amount: 0.3, once: true }}
+            variants={containerVariants}
+            >
+                <motion.div
+                variants={cardVariants}
+                >
+                    <CardsItems
+                    image={ComingSoon}
+                    title={"More projects coming soon..."}
+                    description={"Stay tuned for more projects!"}
+                    video={ComingSoon}
+                    code={ComingSoon} />
+                </motion.div>
+            </motion.div>
+        </section>
+
     </>
     )
 }
