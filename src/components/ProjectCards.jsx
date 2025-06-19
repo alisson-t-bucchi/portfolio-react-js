@@ -208,9 +208,25 @@ const CardsItems = ({image, title, description, icons, video, code}) => {
 export default function Cards() {      
     return(
     <>
-        <section id="qa" /* </>className="shadow-lg rounded-lg p-4" */>
+        <section id="project" className="container mx-auto px-4 py-8">
         <h3 className="text-3xl font-black text-center mb-4 py-8">Projects</h3>
-            <h3 className="text-2xl font-black text-center mb-4 py-8">🧪 Quality Assurance</h3>
+        <div className="mt-4 px-4 py-4 text-xl lg:text-justify space-y-2">
+            <p>
+                This portfolio showcases a selection of projects that reflect my passion for technology and problem-solving across three main areas:
+            </p>
+            <ul className="list-none space-y-1">
+                <li>🧪 <strong>Quality Assurance (QA):</strong> automated testing and software reliability.</li>
+                <li>🧠 <strong>Artificial Intelligence & Data Visualization:</strong> turning data into insights through intelligent models and visual storytelling.</li>
+                <li>🧩 <strong>Full-Stack Development:</strong> end-to-end applications built with performance and user experience in mind.</li>
+            </ul>
+            <p>
+                Each project is an opportunity to explore technology with creativity, purpose, and attention to detail.
+            </p>
+        </div>
+        </section>
+
+        <section id="qa" className="shadow-lg rounded-lg bg-lime-300 p-4 mt-10">
+            <h3 className="text-2xl font-black text-center mb-4 py-10">🧪 Quality Assurance</h3>
             <motion.div
             className="grid lg:grid-cols-3 lg:gap-6 md:grid-cols-2 md:gap-6 mb-4 sm:grid-cols-1 gap-6"
             initial="offscreen"
@@ -237,8 +253,8 @@ export default function Cards() {
         </section>
    
         
-        <section id="ai-dataviz" className="shadow-lg rounded-lg p-4">
-            <h3 className="text-2xl font-black text-center mb-4 py-8">🧠 AI & Data Visual 📊</h3>
+        <section id="ai-dataviz" className="shadow-lg rounded-lg bg-lime-300 p-4 mt-10">
+            <h3 className="text-2xl font-black text-center mb-4 py-10">🧠 AI & Data Visual 📊</h3>
             <motion.div
             className="grid lg:grid-cols-3 lg:gap-6 md:grid-cols-2 md:gap-6 mb-4 sm:grid-cols-1 gap-6"
             initial="offscreen"
@@ -264,8 +280,8 @@ export default function Cards() {
             </motion.div>
         </section>
 
-        <section id="fullstack" className="shadow-lg rounded-lg p-4">
-            <h3 className="text-2xl font-black text-center mb-4 py-8">🧩 Full-Stack Apps</h3>
+        <section id="fullstack" className="shadow-lg rounded-lg bg-lime-300 p-4 mt-10">
+            <h3 className="text-2xl font-black text-center mb-4 py-10">🧩 Full-Stack Apps</h3>
             <motion.div
             className="grid lg:grid-cols-3 lg:gap-6 md:grid-cols-2 md:gap-6 mb-4 sm:grid-cols-1 gap-6"
             initial="offscreen"

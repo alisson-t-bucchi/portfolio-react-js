@@ -67,7 +67,7 @@ const techIcons2 = [
 export default function TechStack({ children }) {
   return (
     <>
-     <h3 className="text-3xl font-bold lg:px-12 px-4">My Tech Stack</h3>
+     <h3 className="text-3xl font-bold lg:px-12 px-4 mt-10">My Tech Stack</h3>
      <div className="grid lg:grid-cols-2 items-stretch gap-6">
       <section className="flex flex-col h-ful text-left py-4">
         <motion.div

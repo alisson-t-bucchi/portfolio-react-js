@@ -7,7 +7,7 @@ import { Typewriter } from "react-simple-typewriter"
 
 export default function HeroSection({content: {title, roleLines}}) {
   return (
-  <header className="text-center py-18 lg:px-12">
+  <header className="text-center py-18 lg:px-12 shadow-lg rounded-lg bg-lime-300 p-4 mt-10">
     <div className="grid lg:grid-cols-2 lg:min-h-6/12 lg:mt-8">
       <div className="flex flex-col gap-4 justify-center items-center lg:items-start">
           <h2 className="text-4xl font-bold">

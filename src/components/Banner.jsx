@@ -26,7 +26,7 @@ export default function Banner() {
   }, []);
 
   return (
-    <section className="overflow-hidden py-8">
+    <section className="overflow-hidden py-8 ">
         <h3 className="text-3xl font-black text-center mb-4 py-4">Companies</h3>
       <div className="relative w-full h-40 md:h-56 lg:h-64 flex items-center">
         <motion.div

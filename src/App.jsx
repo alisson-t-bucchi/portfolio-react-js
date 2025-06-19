@@ -28,7 +28,7 @@ function App() {
   []);
 
   return (
-    <main className=" bg-gradient-to-r from-lime-100 via-lime-200 to-lime-300 text-gray-900 p-4">
+    <main className=" bg-lime-200 text-gray-900 p-4">
       <Layout>
 
         <HeroSection content={heroSection} />

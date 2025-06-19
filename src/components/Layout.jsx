@@ -22,7 +22,7 @@ export default function Layout({ children }) {
     return (
     <>
         <nav className="scroll-smooth py-4 flex justify-between items-center lg:px-12">
-            <h1 className="text-3xl font-bold">My Portfolio</h1>
+            <h1 className="text-3xl font-bold"> My Portfolio</h1>
 
             <div className="lg:hidden" >
                 <FontAwesomeIcon icon={faBars} size="2x" onClick={toggleMenu} /> 
