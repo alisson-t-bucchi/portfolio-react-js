@@ -208,7 +208,7 @@ const CardsItems = ({image, title, description, icons, video, code}) => {
 export default function Cards() {      
     return(
     <>
-        <section id="project" className="container mx-auto px-4 py-8">
+        <section id="project" className="shadow-lg rounded-lg bg-lime-300 mx-auto px-4 py-8">
         <h3 className="text-3xl font-black text-center mb-4 py-8">Projects</h3>
         <div className="mt-4 px-4 py-4 text-xl lg:text-justify space-y-2">
             <p>
@@ -225,13 +225,13 @@ export default function Cards() {
         </div>
         </section>
 
-        <section id="qa" className="shadow-lg rounded-lg bg-lime-300 p-4 mt-10">
+        <section id="qa" className="shadow-lg rounded-lg bg-lime-300 p-4">
             <h3 className="text-2xl font-black text-center mb-4 py-10">🧪 Quality Assurance</h3>
             <motion.div
             className="grid lg:grid-cols-3 lg:gap-6 md:grid-cols-2 md:gap-6 mb-4 sm:grid-cols-1 gap-6"
             initial="offscreen"
             whileInView="onscreen"
-            viewport={{ amount: 0.3, once: true }}
+            viewport={{ amount: 0.1, once: true }}
             variants={containerVariants}
             >
                 {qaProjects.map((project) => (
@@ -253,7 +253,7 @@ export default function Cards() {
         </section>
    
         
-        <section id="ai-dataviz" className="shadow-lg rounded-lg bg-lime-300 p-4 mt-10">
+        <section id="ai-dataviz" className="shadow-lg rounded-lg bg-lime-300 p-4">
             <h3 className="text-2xl font-black text-center mb-4 py-10">🧠 AI & Data Visual 📊</h3>
             <motion.div
             className="grid lg:grid-cols-3 lg:gap-6 md:grid-cols-2 md:gap-6 mb-4 sm:grid-cols-1 gap-6"
@@ -280,7 +280,7 @@ export default function Cards() {
             </motion.div>
         </section>
 
-        <section id="fullstack" className="shadow-lg rounded-lg bg-lime-300 p-4 mt-10">
+        <section id="fullstack" className="shadow-lg rounded-lg bg-lime-300 p-4">
             <h3 className="text-2xl font-black text-center mb-4 py-10">🧩 Full-Stack Apps</h3>
             <motion.div
             className="grid lg:grid-cols-3 lg:gap-6 md:grid-cols-2 md:gap-6 mb-4 sm:grid-cols-1 gap-6"
