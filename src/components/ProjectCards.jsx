@@ -35,6 +35,13 @@ import ScikitlearnIcon from "../assets/icons/scikitlearn-original.svg"
 import StreamlitIcon from "../assets/icons/streamlit-original-wordmark.svg"
 import PandasIcon from "../assets/icons/pandas-original-wordmark.svg"
 import CohereIcon from "../assets/icons/cohere-color.svg"
+import ReactIcon from "../assets/icons/react-icon.svg"
+import NodeIcon from "../assets/icons/node-js-icon.svg"
+import TailwindcssIcon from "../assets/icons/tailwindcss-icon.svg"
+import MySQLIcon from "../assets/icons/mysql-original-wordmark.svg"
+import FirebaseIcon from "../assets/icons/firebase-original-wordmark.svg"
+
+
 
 
 const containerVariants = {
@@ -173,6 +180,39 @@ const iaProjects = [
     },
 ];
 
+const fullStackProjects = [
+    {
+      id: 1,
+      image: ComingSoon,
+      title: "Hotel Booking System.",
+      description: "Hotel booking system with user authentication, room management, and booking functionality.",
+      icons: [
+        { icon: JavaScriptIcon, name: "JavaScript" },
+        { icon: ReactIcon, name: "React" },
+        { icon: TailwindcssIcon, name: "Tailwindcss" },
+        { icon: NodeIcon, name: "Node.js" },
+        { icon: MySQLIcon, name: "MySQL" },
+    ],  
+      video: ComingSoon,
+      code: "https://github.com/alisson-t-bucchi/hotel-booking-react-js.git"
+    },
+    {
+      id: 2,
+      image: ComingSoon,
+      title: "Chatbot Application.",
+      description: "Chatbot application with user authentication, chat history, and real-time messaging.",
+      icons: [
+        { icon: JavaScriptIcon, name: "JavaScript" },
+        { icon: ReactIcon, name: "React" },
+        { icon: TailwindcssIcon, name: "Tailwindcss" },
+        { icon: NodeIcon, name: "Node.js" },
+        { icon: FirebaseIcon, name: "Firebase" },
+    ],  
+      video: ComingSoon,
+      code: ""
+    },
+];
+
 const CardsItems = ({image, title, description, icons, video, code}) => {
     return (
     <div className="shadow-lg rounded-lg p-6 bg-gray-100">
@@ -289,16 +329,20 @@ export default function Cards() {
             viewport={{ amount: 0.3, once: true }}
             variants={containerVariants}
             >
-                <motion.div
-                variants={cardVariants}
-                >
+                {fullStackProjects.map((project) => (
+                      <motion.div
+                      key={project.id}
+                      variants={cardVariants}
+                    >
                     <CardsItems
-                    image={ComingSoon}
-                    title={"More projects coming soon..."}
-                    description={"Stay tuned for more projects!"}
-                    video={ComingSoon}
-                    code={ComingSoon} />
+                    image={project.image}
+                    title={project.title}
+                    description={project.description}
+                    video={project.video}
+                    code={project.code}
+                    icons={project.icons} />
                 </motion.div>
+                ))}
             </motion.div>
         </section>
 
@@ -306,4 +350,4 @@ export default function Cards() {
     )
 }
 
-export {qaProjects, iaProjects}
+export {qaProjects, iaProjects, fullStackProjects}
