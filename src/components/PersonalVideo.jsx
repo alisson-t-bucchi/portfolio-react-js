@@ -9,8 +9,8 @@ export default function PersonalVideo() {
   return (
     <div ref={ref}>
       {inView ? (
-        <video className="w-85 rounded-full md:inline"
-          src="videos/ai-personal-video.mp4"
+        <video className="w-60 rounded-full md:inline"
+          src="videos/hedra-ai-pixar-animation.mp4"
           autoPlay
           muted
           playsInline
@@ -21,8 +21,8 @@ export default function PersonalVideo() {
         </video>
       ) : (
         <img
-        className="w-85 rounded-full md:inline"
-        src="/ai-personal-image.webp"
+        className="w-60 rounded-full md:inline"
+        src="/ai-pixar-personal-image.webp"
         alt="Pré-visualização do vídeo"
         />
       )}
