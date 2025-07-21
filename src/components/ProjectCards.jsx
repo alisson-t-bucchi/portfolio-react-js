@@ -43,7 +43,7 @@ import NodeIcon from "../assets/icons/node-js-icon.svg"
 import TailwindcssIcon from "../assets/icons/tailwindcss-icon.svg"
 import MySQLIcon from "../assets/icons/mysql-original-wordmark.svg"
 import FirebaseIcon from "../assets/icons/firebase-original-wordmark.svg"
-
+import PrismaIcon from "../assets/icons/prisma-original-wordmark.svg"
 
 
 
@@ -190,7 +190,11 @@ const iaProjects = [
       id: 1,
       image: CostOfLivingPredictor,
       title: "Global cost of living predictor using Machine Learning.",
-      description: "Cost of living for country and city predictor in Python.",
+      description:  "Interactive cost of living predictor for any country and city, built in Python.\n" +
+                    "Applies data analysis and supervised learning with an intuitive controls and dynamic predictions for users.\n" +
+                    "📌 Highlights: Clean UI, accurate ML model, data-driven insights.\n" +
+                    "📈 Results: Enables geographic cost comparisons and predictive planning with practical accuracy.\n" +
+                    "🤖 Technologies: ",
       icons: [
         { icon: PythonIcon, name: "Python" },
         { icon: PandasIcon, name: "Pandas" },
@@ -204,8 +208,10 @@ const iaProjects = [
         id: 2,
         image: AIChefDeCuisine,
         title: "Chef de cuisine with AI.",
-        description: "Recipes generator with 2 measurements systems in Python using Regex.",
-        technologies: "Cohere AI and Streamlit.",
+        description:    "AI-powered recipe generator built with dual measurement systems (metric and imperial) for global accessibility using Regex for accurate parsing of ingredients and quantities.\n" +
+                        "📌 Highlights: Natural language generation, intuitive design, multi-unit output.\n" +
+                        "📈 Results: Produces diverse and personalized recipes in seconds with readable formatting.\n" +
+                        "🤖 Technologies: ",
         icons: [
             { icon: PythonIcon, name: "Python" },
             { icon: CohereIcon, name: "Cohere" },
@@ -221,12 +227,16 @@ const fullStackProjects = [
       id: 1,
       image: ComingSoon,
       title: "Hotel Booking System.",
-      description: "Hotel booking system with user authentication, room management, and booking functionality.",
+      description:  "Full-stack hotel booking platform built, includes user authentication, dynamic room management, and intuitive booking workflows.\n" +
+                    "Powered by Prisma ORM over a MySQL database.\n" +
+                    "📌 Highlights: Scalable architecture, clean UI, secure login, and optimized data handling.\n" +
+                    "📈 Results: Streamlined booking operations and efficient room availability updates.",
       icons: [
         { icon: JavaScriptIcon, name: "JavaScript" },
         { icon: ReactIcon, name: "React" },
         { icon: TailwindcssIcon, name: "Tailwindcss" },
         { icon: NodeIcon, name: "Node.js" },
+        { icon: PrismaIcon, name: "Prisma"},
         { icon: MySQLIcon, name: "MySQL" },
     ],  
       video: ComingSoon,
@@ -236,7 +246,10 @@ const fullStackProjects = [
       id: 2,
       image: ComingSoon,
       title: "Chatbot Application.",
-      description: "Chatbot application with user authentication, chat history, and real-time messaging.",
+      description:  "Real-time chatbot app with Firebase integration.\n" +
+                    "Features user authentication, persistent chat history, and seamless live messaging.\n" +
+                    "📌 Highlights: Scalable backend, session persistence, secure messaging flow.\n" +
+                    "📈 Results: Real-time interaction with reliable communication and user state management.",
       icons: [
         { icon: JavaScriptIcon, name: "JavaScript" },
         { icon: ReactIcon, name: "React" },
