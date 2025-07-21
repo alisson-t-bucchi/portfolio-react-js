@@ -14,6 +14,9 @@ import StickerfyPage from "../assets/images/stickerfy-page.webp"
 //
 import StickerfyCypressJSVideo from "../assets/videos/stickerfy-cypress-js.mp4"
 //
+import QAChallengeRX from "../assets/images/qa-challenge-rx.webp"
+import QAChallengeRXVideo from "../assets/videos/interview-qa-rx-redefined.mp4"
+//
 import CostOfLivingPredictor from "../assets/images/cost-of-living-ai.webp"
 //
 import AIChefDeCuisine from "../assets/images/ai-chef-de-cuisine.webp"
@@ -53,7 +56,7 @@ const containerVariants = {
       opacity: 1,
       y: 0,
       transition: {
-        staggerChildren: 0.2, // Delay entre os filhos
+        staggerChildren: 0.2, //Delay entre os filhos
         type: "spring",
         bounce: 0.4,
         duration: 0.8,
@@ -83,7 +86,10 @@ const qaProjects = [
         id: 1,
         image: MagentoPage,
         title: "Playwright test suite for Magento Page.",
-        description: "E2E automation tests for Magento Page in JS",
+        description:    "The E2E test suite supports scalable workflows and critical navigation scenarios, enhancing overall reliability.\n" + 
+                        "📌 Highlights: High test coverage, parallel execution, modular architecture.\n" + 
+                        "📈 Results: Significant reduction in production bugs and improved shopping flow consistency. \n" +
+                        "⚙️ Tools: ",
         icons: [
             { icon: JavaScriptIcon, name: "JavaScript" },
             { icon: PlaywrightIcon, name: "Playwright" },
@@ -95,7 +101,12 @@ const qaProjects = [
         id: 2,
         image: WebFormPage,
         title: "BDD test for Web form Page.",
-        description: "BDD automation test for Web form Page in Python with test reports.",
+        description:    "The solution ensures clear and traceable test logic through Gherkin syntax and rich reporting. \n" + 
+                        "📌 Highlights: Business-readable test cases, visual evidence, CI integration \n" +
+                        "📈 Results: Early regression detection and faster test cycles. \n" +
+                        "⚙️ Tools: ", 
+
+
         icons: [
             { icon: PythonIcon, name: "Python" },
             { icon: SeleniumIcon, name: "Selenium" },
@@ -109,7 +120,10 @@ const qaProjects = [
         id: 3,
         image: CC360Page,
         title: "BDD test for Contact Center 360 Plataform.",
-        description: "BDD automation test for CC360 plataform in Java.",
+        description:    "Scalable testing architecture covers key customer service flows.\n" +
+                        "📌 Highlights: Reusable steps, CI/CD-ready, multiplatform testing. \n" +
+                        "📈 Results: Increased system reliability and enhanced operator experience. \n" +
+                        "⚙️ Tools: ",
         icons: [
             { icon: JavaIcon, name: "Java" },
             { icon: SeleniumIcon, name: "Selenium" },
@@ -123,7 +137,10 @@ const qaProjects = [
         id: 4,
         image: StickerfyPage,
         title: "Selenium test suite for Stickerfy Page.",
-        description: "E2E automation tests in POM pattern for Stickerfy Page in Python with Pytest HTML Reporter.",
+        description:    "End-to-end testing suite following the Page Object Model, designed to validate page dynamics, responsiveness, and user journey. \n" +
+                        "📌 Highlights: Clean reports, scalable structure, maintainable design. \n" +
+                        "📈 Results: Reduced release rework and verified interface stability. \n" +
+                        "⚙️ Tools: ",
         icons: [
             { icon: PythonIcon, name: "Python" },
             { icon: SeleniumIcon, name: "Selenium" },
@@ -136,7 +153,11 @@ const qaProjects = [
         id: 5,
         image: StickerfyPage,
         title: "Cypress test suite for Stickerfy Page.",
-        description: "E2E automation tests for Stickerfy Page in JS with load tests and test reports.",
+        description:    "Scalable E2E automation, featuring load testing and detailed reports. \n" +  
+                        "Optimized for modern front-end architectures and user flow analysis. \n" +
+                        "📌 Highlights: Stress testing, behavioral insights, CI-ready automation. \n" + 
+                        "📈 Results: Performance boost in critical scenarios and data-driven decisions. \n" +
+                        "⚙️ Tools: ", 
         icons: [
             { icon: JavaScriptIcon, name: "JavaScript" },
             { icon: CypressIcon, name: "Cypress" },
@@ -146,6 +167,21 @@ const qaProjects = [
         ], 
         video: StickerfyCypressJSVideo,
         code: "https://github.com/alisson-t-bucchi/stickerfy-cypress-js"
+    },
+     {
+        id: 6,
+        image: QAChallengeRX,
+        title: "Cypress test suite for QA Challenge RX Redefined Page.",
+        description:    "Modern E2E test suite with efficient coverage of business-critical functionalities and candidate assessment criteria. \n" +
+                        "📌 Highlights: Fast execution, structured test flows, readable codebase. \n" +
+                        "📈 Results: High reliability for challenge validation and fast feedback cycles. \n" +
+                        "⚙️ Tools: ",
+        icons: [
+            { icon: JavaScriptIcon, name: "JavaScript" },
+            { icon: CypressIcon, name: "Cypress" },
+        ], 
+        video: QAChallengeRXVideo,
+        code: "https://github.com/alisson-t-bucchi/interview-qa-test-resolution.git"
     },
 ];
 
@@ -218,8 +254,9 @@ const CardsItems = ({image, title, description, icons, video, code}) => {
     <div className="shadow-lg rounded-lg p-6 bg-gray-100">
         <img src={image} alt="Project" className="rounded-md" />
         <h4 className="mt-4 text-xl font-bold">{title}</h4>
-        <p className="text-l">{description}</p>
-        <p className="mt-1 text-l font-bold"> Tech Stack: </p>
+        {description.split("\n").map((line, index) => (
+            <p className="text-l" key={index}>{line}</p>
+        ))}
         {icons && Array.isArray(icons) && (
             <div className="flex flex-wrap gap-2 mt-4 font-bold">
                 {icons.map(({ icon, name }, idx) => (

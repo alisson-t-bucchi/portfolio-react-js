@@ -16,6 +16,7 @@ export default function PersonalVideo() {
           playsInline
           preload="metadata"
           poster="/ai-personal-video.webp"
+          //loop
         >
           Seu navegador não suporta o vídeo.
         </video>
