@@ -22,6 +22,9 @@ import CostOfLivingPredictor from "../assets/images/cost-of-living-ai.webp"
 import AIChefDeCuisine from "../assets/images/ai-chef-de-cuisine.webp"
 import AIChefDeCuisineVideo from "../assets/videos/ai-chef-de-cuisine.mp4"
 //
+import DashboardPowerBI_1 from "../assets/images/DashboardPowerBI-1.png"
+
+
 //import icons//
 import JavaScriptIcon from "../assets/icons/javascript-original.svg"
 import PlaywrightIcon from "../assets/icons/playwright-original.svg"
@@ -44,6 +47,7 @@ import TailwindcssIcon from "../assets/icons/tailwindcss-icon.svg"
 import MySQLIcon from "../assets/icons/mysql-original-wordmark.svg"
 import FirebaseIcon from "../assets/icons/firebase-original-wordmark.svg"
 import PrismaIcon from "../assets/icons/prisma-original-wordmark.svg"
+import PowerBIIcon from "../assets/icons/power-bi-icon.svg"
 
 
 
@@ -220,6 +224,16 @@ const iaProjects = [
         video: AIChefDeCuisineVideo,
         code: "https://github.com/alisson-t-bucchi/chef_de_cuisine_ai.git"
     },
+    {      
+        id: 3,
+        image: DashboardPowerBI_1, 
+        title: "Power BI Dashboard.",
+        description:    "Dashboard created with Power BI from a Excel file", 
+        icons: [
+            { icon: PowerBIIcon, name: "Power BI" },
+        ],
+        video: AIChefDeCuisineVideo,
+    }, 
 ];
 
 const fullStackProjects = [
