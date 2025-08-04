@@ -23,6 +23,7 @@ import AIChefDeCuisine from "../assets/images/ai-chef-de-cuisine.webp"
 import AIChefDeCuisineVideo from "../assets/videos/ai-chef-de-cuisine.mp4"
 //
 import DashboardPowerBI_1 from "../assets/images/DashboardPowerBI-1.png"
+import DashboardPowerrBI_1Video from "../assets/videos/power-bi-dashboards.mp4"
 
 
 //import icons//
@@ -227,12 +228,15 @@ const iaProjects = [
     {      
         id: 3,
         image: DashboardPowerBI_1, 
-        title: "Power BI Dashboard.",
-        description:    "Dashboard created with Power BI from a Excel file", 
+        title: "Power BI Dashboards.",
+        description:    "Interactive dashboard built with Power BI using Excel-based databases and an ETL framework for data transformation.\n" +
+                        "📌 Highlights: Accurate visualizations, intuitive layout, actionable business insights.\n" +
+                        "📈 Results: Beautiful and insightful graphics that enhance decision-making.\n" +
+                        "🤖 Technologies: ",
         icons: [
             { icon: PowerBIIcon, name: "Power BI" },
         ],
-        video: AIChefDeCuisineVideo,
+        video: DashboardPowerrBI_1Video,
     }, 
 ];
 
