@@ -237,6 +237,7 @@ const iaProjects = [
             { icon: PowerBIIcon, name: "Power BI" },
         ],
         video: DashboardPowerrBI_1Video,
+        code: "https://github.com/alisson-t-bucchi/power-bi-dashboards.git"
     }, 
 ];
 
