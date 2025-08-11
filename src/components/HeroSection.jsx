@@ -34,13 +34,13 @@ export default function HeroSection({content: {title, roleLines}}) {
           </h2>
           <div className="py-3 lg:flex space-x-6">
             <a href="https://www.linkedin.com/in/alisson-tex-bucchi/" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faLinkedin} size="2x" className="hover:text-white transition-colors duration-150 transform hover:scale-145" />
+            <FontAwesomeIcon icon={faLinkedin} size="2x" title="Let's work together baby!" className="hover:text-white transition-colors duration-150 transform hover:scale-145" />
             </a>
             <a href="https://github.com/alisson-t-bucchi" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faGithub} size="2x" className="hover:text-white transition-colors duration-150 transform hover:scale-145" />
+            <FontAwesomeIcon icon={faGithub} size="2x" title="Octocat repo here!" className="hover:text-white transition-colors duration-150 transform hover:scale-145" />
             </a>
             <a href="https://issuu.com/alisson-tech-dev/docs/professional_skills_documents_alisson" target="_blank">
-            <FontAwesomeIcon icon={faDownload} size="2x" title="Skills document" transition="opacity 0.1s" className="hover:text-white transition-colors duration-150 transform hover:scale-145" />
+            <FontAwesomeIcon icon={faDownload} size="2x" title="Skills doc here!" className="hover:text-white transition-colors duration-150 transform hover:scale-145" />
             </a>
             {/* <button className="relative bg-transparent border-2 border-black text-black font-bold py-1 px-2 rounded-lg shadow-md hover:shadow-lg active:shadow-inner transform transition-transform duration-200 hover:scale-115 active:scale-95"> */}
             <a href="mailto:alisson.bucchi@outlook.com" target="_blank">

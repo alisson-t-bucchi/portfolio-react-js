@@ -1,14 +1,14 @@
 import { SpeedInsights } from "@vercel/speed-insights/react"
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; 
 import { faBars } from "@fortawesome/free-solid-svg-icons"; 
-import { faInstagram, faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram, faGithub, faLinkedinIn, faSpotify } from "@fortawesome/free-brands-svg-icons";
 import ScrollDinamicIndicator from "../components/ScrollDinamicIndicator";
-
 
 export default function Layout({ children }) {
     const [menuVisible, setMenuVisible] = useState(false);
     const [projectsOpen, setProjectsOpen] = useState(false);
+    const [counter, setCounter] = useState(0);
   
     const toggleMenu = () => {
       setMenuVisible(!menuVisible);
@@ -18,6 +18,14 @@ export default function Layout({ children }) {
       const toggleProjects = () => {
         setProjectsOpen(!projectsOpen);
     };
+    
+    useEffect(() => {
+        const storedCount = localStorage.getItem("pageVisitCount");
+        const count = storedCount ? parseInt(storedCount, 10) : 0;
+        const newCount = count + 1;
+        setCounter(newCount);
+        localStorage.setItem("pageVisitCount", newCount);
+    }, []);
 
     return (
     <>
@@ -62,6 +70,7 @@ export default function Layout({ children }) {
                 <a className="flex title-font font-medium items-center justify-center">
                     <span className="ml-3 text-2xl">© 2024 Website MIT Licensed.</span>
                 </a>
+                <span className="mt-2 text-lg text-gray-700">Page visits: {counter}</span>
                 <div className="flex justify-center mt-4 gap-x-4">
                     <a href="https://www.linkedin.com/in/alisson-tex-bucchi/" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faLinkedinIn} size="2x" className="hover:text-white transition-colors duration-150 transform hover:scale-145" />
@@ -71,6 +80,9 @@ export default function Layout({ children }) {
                     </a>
                     <a href="https://www.instagram.com/coded_future/" target="_blank">
                         <FontAwesomeIcon icon={faInstagram} size="2x" className="hover:text-white transition-colors duration-150 transform hover:scale-145" />
+                    </a>
+                    <a href="https://open.spotify.com/user/31s3qqvfegrkeq4rrfiddj66nhpi?si=4049d39cf87a4c12" target="_blank">
+                        <FontAwesomeIcon icon={faSpotify} size="2x" className="hover:text-white transition-colors duration-150 transform hover:scale-145" />
                     </a>
                 </div>
             </div>
