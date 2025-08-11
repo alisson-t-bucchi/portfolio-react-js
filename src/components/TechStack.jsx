@@ -26,7 +26,7 @@ const containerVariants = {
       type: "spring",
       bounce: 0.3,
       duration: 0.8,
-      delay: 1
+      delay: 0.3,
     },
   },
 }
@@ -38,7 +38,7 @@ const itemVariants = {
     y: 0,
     transition: {
       type: "spring",
-      bounce: 0.2,
+      bounce: 0.4,
       duration: 0.6,
     },
   },
