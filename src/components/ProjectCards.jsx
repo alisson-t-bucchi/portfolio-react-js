@@ -2,20 +2,7 @@ import { motion } from "motion/react"
 
 import ComingSoon from "../assets/images/coming-soon.webp"
 //
-import MagentoPage from "../assets/images/magento-page.webp"
-//
-import WebFormPage from "../assets/images/web-form-page.webp"
-import WebFormSeleniumPythonVideo from "../assets/videos/web-form-selenium-python.mp4"
-//
-import CC360Page from "../assets/images/CC360.webp"
-//
-import StickerfyAutomationSeleniumPythonVideo from "../assets/videos/sitckerfy-automation-selenium-python.mp4"
-import StickerfyPage from "../assets/images/stickerfy-page.webp"
-//
-import StickerfyCypressJSVideo from "../assets/videos/stickerfy-cypress-js.mp4"
-//
-import QAChallengeRX from "../assets/images/qa-challenge-rx.webp"
-import QAChallengeRXVideo from "../assets/videos/interview-qa-rx-redefined.mp4"
+import SaucedemoPage from "../assets/images/saucedemo-page.webp"
 //
 import CostOfLivingPredictor from "../assets/images/cost-of-living-ai.webp"
 //
@@ -24,7 +11,11 @@ import AIChefDeCuisineVideo from "../assets/videos/ai-chef-de-cuisine.mp4"
 //
 import DashboardPowerBI_1 from "../assets/images/DashboardPowerBI-1.png"
 import DashboardPowerrBI_1Video from "../assets/videos/power-bi-dashboards.mp4"
-
+//
+import OrangeHRM from "../assets/images/orange-hrm.webp"    
+import BugBank from "../assets/images/bug-bank.webp"
+import BrowserStackDemo from "../assets/images/browser-stack-demo.webp"
+import AutomationPractice from "../assets/images/automation-practice.webp"
 
 //import icons//
 import JavaScriptIcon from "../assets/icons/javascript-original.svg"
@@ -49,7 +40,11 @@ import MySQLIcon from "../assets/icons/mysql-original-wordmark.svg"
 import FirebaseIcon from "../assets/icons/firebase-original-wordmark.svg"
 import PrismaIcon from "../assets/icons/prisma-original-wordmark.svg"
 import PowerBIIcon from "../assets/icons/power-bi-icon.svg"
-
+import GitHubActionsIcon from "../assets/icons/githubactions-original.svg"
+import MochaReportIcon from "../assets/icons/mocha-original.svg"
+import RobotFrameworkIcon from "../assets/icons/robotframework-original.svg"
+import JenkinsIcon from "../assets/icons/jenkins-original.svg"
+import JMeterIcon from "../assets/icons/jmeter-original.svg"
 
 
 const containerVariants = {
@@ -89,8 +84,8 @@ const cardVariants = {
 const qaProjects = [
     {
         id: 1,
-        image: MagentoPage,
-        title: "Playwright test suite for Magento Page.",
+        image: SaucedemoPage,
+        title: "Playwright test suite for Saucedemo Store by Swag Labs.",
         description:    "The E2E test suite supports scalable workflows and critical navigation scenarios, enhancing overall reliability.\n" + 
                         "📌 Highlights: High test coverage, parallel execution, modular architecture.\n" + 
                         "📈 Results: Significant reduction in production bugs and improved shopping flow consistency. \n" +
@@ -98,33 +93,33 @@ const qaProjects = [
         icons: [
             { icon: JavaScriptIcon, name: "JavaScript" },
             { icon: PlaywrightIcon, name: "Playwright" },
+            { icon: MochaReportIcon, name: "Mocha Awesome Report" },
+            { icon: GitHubActionsIcon, name: "Github Actions" },
         ], 
         video: ComingSoon,  //criar video
-        code: "https://github.com/alisson-t-bucchi/magento-playwright-js.git", 
+        code: "https://github.com/alisson-t-bucchi/saucedemo-playwright-js.git", 
     },
     {
         id: 2,
-        image: WebFormPage,
-        title: "BDD test for Web form Page.",
+        image: BugBank,
+        title: "Robot Framework test suite for Bug Bank.",
         description:    "The solution ensures clear and traceable test logic through Gherkin syntax and rich reporting. \n" + 
                         "📌 Highlights: Business-readable test cases, visual evidence, CI integration \n" +
                         "📈 Results: Early regression detection and faster test cycles. \n" +
                         "⚙️ Tools: ", 
-
-
         icons: [
             { icon: PythonIcon, name: "Python" },
-            { icon: SeleniumIcon, name: "Selenium" },
-            { icon: CucumberIcon, name: "Cucumber" },
+            { icon: RobotFrameworkIcon, name: "Robot Framework" },
             { icon: AllureIcon, name: "Allure" },
+            { icon: GitHubActionsIcon, name: "Github Actions" },
         ], 
-        video: WebFormSeleniumPythonVideo,
-        code:"https://github.com/alisson-t-bucchi/webform_selenium_behave_python.git"
+        video: ComingSoon, //criar video
+        code:"https://github.com/alisson-t-bucchi"
     },
     {
         id: 3,
-        image: CC360Page,
-        title: "BDD test for Contact Center 360 Plataform.",
+        image: OrangeHRM,
+        title: "Selenium with BDD test suite for Orange HRM Demo.",
         description:    "Scalable testing architecture covers key customer service flows.\n" +
                         "📌 Highlights: Reusable steps, CI/CD-ready, multiplatform testing. \n" +
                         "📈 Results: Increased system reliability and enhanced operator experience. \n" +
@@ -134,14 +129,17 @@ const qaProjects = [
             { icon: SeleniumIcon, name: "Selenium" },
             { icon: CucumberIcon, name: "Cucumber" },
             { icon: JunitIcon, name: "Junit 5" }, 
+            { icon: AllureIcon, name: "Allure" },
+            { icon: JMeterIcon, name: "JMeter" },
+            { icon: JenkinsIcon, name: "Jenkins" },
         ],
         video: ComingSoon,
-        code: "https://github.com/alisson-t-bucchi/CC360-selenium-cucumber-java.git"
+        code: "https://github.com/alisson-t-bucchi"
     },
     {
         id: 4,
-        image: StickerfyPage,
-        title: "Selenium test suite for Stickerfy Page.",
+        image: AutomationPractice,
+        title: "Selenium test suite for Automation Practice page.", //http://www.automationpractice.pl/index.php
         description:    "End-to-end testing suite following the Page Object Model, designed to validate page dynamics, responsiveness, and user journey. \n" +
                         "📌 Highlights: Clean reports, scalable structure, maintainable design. \n" +
                         "📈 Results: Reduced release rework and verified interface stability. \n" +
@@ -150,14 +148,16 @@ const qaProjects = [
             { icon: PythonIcon, name: "Python" },
             { icon: SeleniumIcon, name: "Selenium" },
             { icon: PytestIcon, name: "Pytest" }, 
+            { icon: AllureIcon, name: "Allure" },
+            { icon: JenkinsIcon, name: "Jenkins" },
         ],
-        video: StickerfyAutomationSeleniumPythonVideo,
-        code: "https://github.com/alisson-t-bucchi/stickerfy-selenium-python"
+        video: ComingSoon,
+        code: "https://github.com/alisson-t-bucchi"
     },
     {
         id: 5,
-        image: StickerfyPage,
-        title: "Cypress test suite for Stickerfy Page.",
+        image: BrowserStackDemo,
+        title: "Cypress test suite for BrowserStack Demo.", //https://bstackdemo.com/
         description:    "Scalable E2E automation, featuring load testing and detailed reports. \n" +  
                         "Optimized for modern front-end architectures and user flow analysis. \n" +
                         "📌 Highlights: Stress testing, behavioral insights, CI-ready automation. \n" + 
@@ -168,25 +168,10 @@ const qaProjects = [
             { icon: CypressIcon, name: "Cypress" },
             { icon: AllureIcon, name: "Allure Reports" },
             { icon: K6Icon, name: "K6" },
-
+            { icon: GitHubActionsIcon, name: "Github Actions" },
         ], 
-        video: StickerfyCypressJSVideo,
-        code: "https://github.com/alisson-t-bucchi/stickerfy-cypress-js"
-    },
-     {
-        id: 6,
-        image: QAChallengeRX,
-        title: "Cypress test suite for QA Challenge RX Redefined Page.",
-        description:    "Modern E2E test suite with efficient coverage of business-critical functionalities and candidate assessment criteria. \n" +
-                        "📌 Highlights: Fast execution, structured test flows, readable codebase. \n" +
-                        "📈 Results: High reliability for challenge validation and fast feedback cycles. \n" +
-                        "⚙️ Tools: ",
-        icons: [
-            { icon: JavaScriptIcon, name: "JavaScript" },
-            { icon: CypressIcon, name: "Cypress" },
-        ], 
-        video: QAChallengeRXVideo,
-        code: "https://github.com/alisson-t-bucchi/interview-qa-test-resolution.git"
+        video: ComingSoon, //criar video
+        code: "https://github.com/alisson-t-bucchi"
     },
 ];
 
