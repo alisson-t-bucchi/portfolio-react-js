@@ -3,11 +3,13 @@ import { motion } from "framer-motion";
 import WorkanaLogo from "../assets/images/workana-logo.webp";
 import LogicalisLogo from "../assets/images/logicalis-logo.webp"
 import UpworkLogo from "../assets/images/upwork-logo.webp"; 
+import SolinftecLogo from "../assets/images/solinftec-logo.webp";
 
 const images = [
   WorkanaLogo,
   LogicalisLogo,
-  UpworkLogo
+  UpworkLogo,
+  SolinftecLogo
 ];
 
 export default function Banner() {
