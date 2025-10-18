@@ -268,7 +268,7 @@ const fullStackProjects = [
 
 const CardsItems = ({image, title, description, icons, video, code}) => {
     return (
-    <div className="shadow-lg rounded-lg p-6 bg-gray-100">
+    <div className="shadow-lg rounded-4xl p-6 bg-gray-100">
         <img src={image} alt="Project" className="rounded-md" />
         <h4 className="mt-4 text-xl font-bold">{title}</h4>
         {description.split("\n").map((line, index) => (
@@ -302,7 +302,7 @@ const CardsItems = ({image, title, description, icons, video, code}) => {
 export default function Cards() {      
     return(
     <>
-        <section id="project" className="shadow-lg rounded-lg bg-lime-300 mx-auto px-4 py-8">
+        <section id="project" className="shadow-lg rounded-4xl bg-lime-300 mx-auto px-4 py-8">
         <h3 className="text-3xl font-black text-center mb-4 py-8">Projects</h3>
         <div className="mt-4 px-4 py-4 text-xl lg:text-justify space-y-2">
             <p>

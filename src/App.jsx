@@ -28,7 +28,7 @@ function App() {
   []);
 
   return (
-    <main className=" bg-lime-200 text-gray-900 p-4">
+    <main className=" bg-lime-200 text-gray-900 p-4 rounded-full">
       <Layout>
 
         <HeroSection content={heroSection} />

@@ -12,7 +12,7 @@ const testimonialsData = [
   
   const TestimonialItem = ({ text, image, name, title }) => (
     <div id="testimonials" className="p-4 md:w-1/2 w-full">
-      <div className="h-full bg-white p-8 rounded">
+      <div className="h-full bg-white p-8 rounded-4xl">
         <p className="leading-relaxed mb-6">{text}</p>
         <div className="inline-flex items-center">
           <img
