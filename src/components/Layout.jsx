@@ -19,13 +19,14 @@ export default function Layout({ children }) {
         setProjectsOpen(!projectsOpen);
     };
     
-    useEffect(() => {
+    /* useEffect(() => {
         const storedCount = localStorage.getItem("pageVisitCount");
         const count = storedCount ? parseInt(storedCount, 10) : 0;
         const newCount = count + 1;
         setCounter(newCount);
         localStorage.setItem("pageVisitCount", newCount);
     }, []);
+    **/
 
     return (
     <>
@@ -48,12 +49,12 @@ export default function Layout({ children }) {
                     </button>
                     <div className={`${projectsOpen ? "block" : "hidden"} 
                         lg:group-hover:block 
-                        absolute z-10 mt-2 bg-lime-100 rounded-md shadow-lg p-4 space-y-2 text-xl text-black min-w-[200px]
+                        absolute z-10 mt-2 bg-white rounded-md shadow-lg p-4 space-y-2 text-xl text-black min-w-[200px]
                         lg:left-1/2 lg:-translate-x-1/2
                         `}>
-                        <a href="#qa" className="block hover:bg-lime-300 px-3 py-2 rounded">QA Projects</a>
-                        <a href="#ai-dataviz" className="block hover:bg-lime-300 px-3 py-2 rounded">AI & Data Visual</a>
-                        <a href="#fullstack" className="block hover:bg-lime-300 px-3 py-2 rounded">Full-Stack Apps</a>
+                        <a href="#qa" className="block hover:bg-white px-3 py-2 rounded">QA Projects</a>
+                        <a href="#ai-dataviz" className="block hover:bg-white px-3 py-2 rounded">AI & Data Visual</a>
+                        <a href="#fullstack" className="block hover:bg-white px-3 py-2 rounded">Full-Stack Apps</a>
                     </div>
                 </div>
                 <a href="#testimonials" className="hover:text-white transition-colors duration-150 transform hover:scale-125">Testimonials</a>
@@ -70,7 +71,7 @@ export default function Layout({ children }) {
                 <a className="flex title-font font-medium items-center justify-center">
                     <span className="ml-3 text-2xl">© 2024 Website MIT Licensed.</span>
                 </a>
-                <span className="mt-2 text-lg text-gray-700">Page visits: {counter}</span>
+                {/* <span className="mt-2 text-lg text-gray-700">Page visits: {counter}</span> */}
                 <div className="flex justify-center mt-4 gap-x-4">
                     <a href="https://www.linkedin.com/in/alisson-tex-bucchi/" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faLinkedinIn} size="2x" className="hover:text-white transition-colors duration-150 transform hover:scale-145" />
