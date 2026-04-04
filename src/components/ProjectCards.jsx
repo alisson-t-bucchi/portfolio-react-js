@@ -353,7 +353,7 @@ export default function Cards() {
             className="grid lg:grid-cols-3 lg:gap-6 md:grid-cols-2 md:gap-6 mb-4 sm:grid-cols-1 gap-6"
             initial="offscreen"
             whileInView="onscreen"
-            viewport={{ amount: 0.3, once: true }}
+            viewport={{ amount: 0.1, once: true }}
             variants={containerVariants}
             >
                 {iaProjects.map((project) => (
@@ -380,7 +380,7 @@ export default function Cards() {
             className="grid lg:grid-cols-3 lg:gap-6 md:grid-cols-2 md:gap-6 mb-4 sm:grid-cols-1 gap-6"
             initial="offscreen"
             whileInView="onscreen"
-            viewport={{ amount: 0.3, once: true }}
+            viewport={{ amount: 0.1, once: true }}
             variants={containerVariants}
             >
                 {fullStackProjects.map((project) => (

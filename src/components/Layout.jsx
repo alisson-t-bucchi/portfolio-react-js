@@ -69,7 +69,7 @@ export default function Layout({ children }) {
         <footer className="py-15 body-font">
             <div className="px-5 py-5 mx-auto flex flex-col items-center justify-center">
                 <a className="flex title-font font-medium items-center justify-center">
-                    <span className="ml-3 text-2xl">© 2024 Website MIT Licensed.</span>
+                    <span className="ml-3 text-2xl">© 2026 Website MIT Licensed.</span>
                 </a>
                 {/* <span className="mt-2 text-lg text-gray-700">Page visits: {counter}</span> */}
                 <div className="flex justify-center mt-4 gap-x-4">
