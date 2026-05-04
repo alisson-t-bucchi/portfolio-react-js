@@ -2,12 +2,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload, faEnvelopeOpenText } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import PersonalVideo from "./PersonalVideo";
+import PersonalImage from "../assets/images/personal_photo_2.jpeg"
 import { Typewriter } from "react-simple-typewriter"
-//import PersonalImage from "../assets/images/Web_Photo_Editor.jpg"
 
 export default function HeroSection({content: {title, roleLines}}) {
   return (
-  <header className="text-center py-18 lg:px-12 shadow-lg rounded-full bg-lime-300 p-4 mt-10">
+  <header className="text-center py-18 lg:px-12 p-4 mt-10">
     <div className="grid lg:grid-cols-2 lg:min-h-6/12 lg:mt-8">
       <div className="flex flex-col gap-4 justify-center items-center lg:items-start">
           <h2 className="text-4xl font-bold">
@@ -32,32 +32,31 @@ export default function HeroSection({content: {title, roleLines}}) {
               delaySpeed={1000}
             />
           </h2>
-          <div className="py-3 lg:flex space-x-6">
+          <div className="py-3 lg:flex space-x-6 mt-2 items-center">
+            <a href="#qa" className=" bg-white text-slate-900 font-bold text-center px-4 py-2 rounded-lg transition-colors duration-150 transform hover:scale-110">
+                View Projects 🔎
+            </a> 
             <a href="https://www.linkedin.com/in/alisson-tex-bucchi/" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faLinkedin} size="2x" title="Let's work together baby!" className="hover:text-white transition-colors duration-150 transform hover:scale-145" />
+            <FontAwesomeIcon icon={faLinkedin} className="text-4xl hover:text-white transition-colors duration-150 transform hover:scale-125" />
             </a>
             <a href="https://github.com/alisson-t-bucchi" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faGithub} size="2x" title="Octocat repo here!" className="hover:text-white transition-colors duration-150 transform hover:scale-145" />
-            </a>
-            <a href="https://issuu.com/alisson-tech-dev/docs/professional_skills_documents_alisson" target="_blank">
-            <FontAwesomeIcon icon={faDownload} size="2x" title="Skills doc here!" className="hover:text-white transition-colors duration-150 transform hover:scale-145" />
-            </a>
-            {/* <button className="relative bg-transparent border-2 border-black text-black font-bold py-1 px-2 rounded-lg shadow-md hover:shadow-lg active:shadow-inner transform transition-transform duration-200 hover:scale-115 active:scale-95"> */}
-            <a href="mailto:alisson.bucchi@outlook.com" target="_blank">
-            <FontAwesomeIcon icon={faEnvelopeOpenText} size="2x" title="Contact me!" className="hover:text-white transition-colors duration-150 transform hover:scale-145" />
+            <FontAwesomeIcon icon={faGithub} className="text-4xl hover:text-white transition-colors duration-150 transform hover:scale-125" />
             </a>
           </div>
         </div>
-        {/* <div className="flex flex-col items-center gap-4">
-           <img className="w-90 rounded-full border-6 md:inline" 
-            src={PersonalImage} 
-            alt="personal image" 
-          />
-        </div> */}
-      <div className="flex flex-col items-center gap-4">
+        <div className="flex flex-col items-center gap-4">
+          <div className="p-[4px] rounded-full bg-gradient-to-r from-blue-300 via-blue-600 to-blue-900">
+            <img className="w-70 h-70 rounded-full object-cover"
+            src={PersonalImage}
+            alt="personal image"
+            />
+          </div>
+        </div>
+
+{/*       <div className="flex flex-col items-center gap-4">
         <PersonalVideo />
         <p className="text-lg text-gray-900 font-medium">Hello, hello, tech people! </p>
-      </div>
+      </div> */}
       
     </div>
   </header>

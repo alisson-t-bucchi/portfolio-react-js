@@ -268,11 +268,11 @@ const fullStackProjects = [
 
 const CardsItems = ({image, title, description, icons, video, code}) => {
     return (
-    <div className="shadow-lg rounded-4xl p-6 bg-gray-100">
+    <div className="shadow-lg rounded-4xl p-6 bg-slate-800">
         <img src={image} alt="Project" className="rounded-md" />
-        <h4 className="mt-4 text-xl font-bold">{title}</h4>
+        <h4 className="mt-4 text-xl font-bold text-white">{title}</h4>
         {description.split("\n").map((line, index) => (
-            <p className="text-l" key={index}>{line}</p>
+            <p className="text-l text-gray-300" key={index}>{line}</p>
         ))}
         {icons && Array.isArray(icons) && (
             <div className="flex flex-wrap gap-2 mt-4 font-bold">
@@ -288,10 +288,10 @@ const CardsItems = ({image, title, description, icons, video, code}) => {
             </div>
         )}
         <div className="flex space-x-4 mt-4">
-            <a href={video} target="_blank" rel="noopener noreferrer" className="bg-white px-4 py-1 rounded-lg border-2">
+            <a href={video} target="_blank" rel="noopener noreferrer" className="bg-slate-800 hover:bg-slate-500 border-2 border-slate-500 px-4 py-1 rounded-lg transition duration-500 ease-in-out">
                 Live Preview
             </a>
-            <a href={code} target="_blank" rel="noopener noreferrer" className="bg-white px-4 py-1 rounded-lg border-2">
+            <a href={code} target="_blank" rel="noopener noreferrer" className="bg-slate-800 hover:bg-slate-500 border-2 border-slate-500 px-4 py-1 rounded-lg transition duration-500 ease-in-out">
                 View code
             </a>
         </div>
@@ -302,7 +302,7 @@ const CardsItems = ({image, title, description, icons, video, code}) => {
 export default function Cards() {      
     return(
     <>
-        <section id="project" className="shadow-lg rounded-4xl bg-lime-300 mx-auto px-4 py-8">
+        <section id="project" className="shadow-lg rounded-4xl mx-auto px-4 py-8">
         <h3 className="text-3xl font-black text-center mb-4 py-8">Projects</h3>
         <div className="mt-4 px-4 py-4 text-xl lg:text-justify space-y-2">
             <p>
@@ -319,7 +319,7 @@ export default function Cards() {
         </div>
         </section>
 
-        <section id="qa" className="shadow-lg rounded-lg bg-lime-300 p-4">
+        <section id="qa" className="shadow-lg rounded-lg p-4">
             <h3 className="text-2xl font-black text-center mb-4 py-10">🧪 Quality Assurance</h3>
             <motion.div
             className="grid lg:grid-cols-3 lg:gap-6 md:grid-cols-2 md:gap-6 mb-4 sm:grid-cols-1 gap-6"
@@ -347,7 +347,7 @@ export default function Cards() {
         </section>
    
         
-        <section id="ai-dataviz" className="shadow-lg rounded-lg bg-lime-300 p-4">
+        <section id="ai-dataviz" className="shadow-lg rounded-lg p-4">
             <h3 className="text-2xl font-black text-center mb-4 py-10">🧠 AI & Data Visual 📊</h3>
             <motion.div
             className="grid lg:grid-cols-3 lg:gap-6 md:grid-cols-2 md:gap-6 mb-4 sm:grid-cols-1 gap-6"
@@ -374,7 +374,7 @@ export default function Cards() {
             </motion.div>
         </section>
 
-        <section id="fullstack" className="shadow-lg rounded-lg bg-lime-300 p-4">
+        <section id="fullstack" className="shadow-lg rounded-lg p-4">
             <h3 className="text-2xl font-black text-center mb-4 py-10">🧩 Full-Stack Apps</h3>
             <motion.div
             className="grid lg:grid-cols-3 lg:gap-6 md:grid-cols-2 md:gap-6 mb-4 sm:grid-cols-1 gap-6"

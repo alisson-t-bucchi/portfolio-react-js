@@ -6,14 +6,14 @@ import AboutMe from "./components/AboutMe"
 import Banner from "./components/Banner"
 import AnimatedBackground from "./components/AnimatedBackground"
 import Testimonials from "./components/Testimonials"
-import TechStack from "./components/TechStack"
+import TechStackByCores from "./components/TechStackByCores"
 
 const heroSection = {
   title: "Alisson T. Bucchi",
   roleLines: [
-    "QA Engineer & Data Specialist",
-    "Full Stack Dev in progress...", 
-    "AI & ML enthusiast"
+    "QA Automation Engineer",
+    "Data-Driven Testing",
+    "Exploring AI & Scalable Systems"
   ]
 } 
 
@@ -28,12 +28,12 @@ function App() {
   []);
 
   return (
-    <main className=" bg-lime-200 text-gray-900 p-4 rounded-full">
+    <main className=" bg-slate-900 text-white p-4">
       <Layout>
 
         <HeroSection content={heroSection} />
 
-        <TechStack></TechStack>
+        <TechStackByCores></TechStackByCores>
 
         <AboutMe></AboutMe>
 
