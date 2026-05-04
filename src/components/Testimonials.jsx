@@ -12,8 +12,8 @@ const testimonialsData = [
   
   const TestimonialItem = ({ text, image, name, title }) => (
     <div id="testimonials" className="p-4 md:w-1/2 w-full">
-      <div className="h-full bg-white p-8 rounded-4xl">
-        <p className="leading-relaxed mb-6">{text}</p>
+      <div className="h-full p-8 rounded-4xl bg-white/5 border border-white/10 backdrop-blur-md shadow-lg">
+        <p className="leading-relaxed mb-6 text-gray-300">{text}</p>
         <div className="inline-flex items-center">
           <img
             alt="Testimonial"
@@ -21,8 +21,8 @@ const testimonialsData = [
             className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
           />
           <span className="flex-grow flex flex-col pl-4">
-            <span className="title-font font-medium text-gray-900">{name}</span>
-            <span className="text-gray-700 text-sm">{title}</span>
+            <span className="title-font font-medium text-blue-500">{name}</span>
+            <span className="text-blue-500 text-sm">{title}</span>
           </span>
         </div>
       </div>

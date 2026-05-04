@@ -1,7 +1,7 @@
 import { SpeedInsights } from "@vercel/speed-insights/react"
 import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; 
-import { faBars } from "@fortawesome/free-solid-svg-icons"; 
+import { faBars, faEnvelopeOpenText } from "@fortawesome/free-solid-svg-icons"; 
 import { faInstagram, faGithub, faLinkedinIn, faSpotify } from "@fortawesome/free-brands-svg-icons";
 import ScrollDinamicIndicator from "../components/ScrollDinamicIndicator";
 
@@ -37,7 +37,7 @@ export default function Layout({ children }) {
                 <FontAwesomeIcon icon={faBars} size="2x" onClick={toggleMenu} /> 
             </div>
 
-            <div className={`${menuVisible ? "block" : "hidden"} space-x-6 font-bold text-2xl lg:flex flex-col lg:flex-row absolute lg:static top-16 left-0 w-full lg:w-auto bg-lime-100 lg:bg-transparent shadow-lg lg:shadow-none p-4 lg:p-0` }>
+            <div className={`${menuVisible ? "block" : "hidden"} space-x-6 font-bold text-2xl lg:flex flex-col lg:flex-row absolute lg:static top-16 left-0 w-full lg:w-auto bg-white lg:bg-transparent shadow-lg lg:shadow-none p-4 lg:p-0` }>
                 <a href="#about" className="hover:text-white transition-colors duration-150 transform hover:scale-125">About</a>
                  
                  <div className="relative group">
@@ -69,24 +69,24 @@ export default function Layout({ children }) {
         <footer className="py-15 body-font">
             <div className="px-5 py-5 mx-auto flex flex-col items-center justify-center">
                 <a className="flex title-font font-medium items-center justify-center">
-                    <span className="ml-3 text-2xl">© 2026 Website MIT Licensed.</span>
+                    <span className="ml-3 text-2xl">Let's work together!</span>
                 </a>
                 {/* <span className="mt-2 text-lg text-gray-700">Page visits: {counter}</span> */}
                 <div className="flex justify-center mt-4 gap-x-4">
                     <a href="https://www.linkedin.com/in/alisson-tex-bucchi/" target="_blank" rel="noopener noreferrer">
-                        <FontAwesomeIcon icon={faLinkedinIn} size="2x" className="hover:text-white transition-colors duration-150 transform hover:scale-145" />
+                        <FontAwesomeIcon icon={faLinkedinIn} size="2x" className="hover:text-blue-400 transition-colors duration-300 transform hover:scale-110" />
                     </a>
                     <a href="https://github.com/alisson-t-bucchi" target="_blank" rel="noopener noreferrer">
-                        <FontAwesomeIcon icon={faGithub} size="2x" className="hover:text-white transition-colors duration-150 transform hover:scale-145" />
+                        <FontAwesomeIcon icon={faGithub} size="2x" className="hover:text-black transition-colors duration-300 transform hover:scale-110" />
                     </a>
-                    <a href="https://www.instagram.com/coded_future/" target="_blank">
-                        <FontAwesomeIcon icon={faInstagram} size="2x" className="hover:text-white transition-colors duration-150 transform hover:scale-145" />
-                    </a>
-                    <a href="https://open.spotify.com/user/31s3qqvfegrkeq4rrfiddj66nhpi?si=4049d39cf87a4c12" target="_blank">
-                        <FontAwesomeIcon icon={faSpotify} size="2x" className="hover:text-white transition-colors duration-150 transform hover:scale-145" />
+                    <a href="mailto:alisson.bucchi@outlook.com" target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={faEnvelopeOpenText} size="2x" title="Contact Me!" className="hover:text-green-400 transition-colors duration-300 transform hover:scale-110" />
                     </a>
                 </div>
             </div>
+            <p className="mt-6 text-sm text-gray-500 text-center">
+                © 2026 Alisson Bucchi — Built with React & Tailwind
+            </p>
         </footer>
         <SpeedInsights />
     </>

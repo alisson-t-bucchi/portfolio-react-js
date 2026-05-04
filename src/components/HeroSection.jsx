@@ -1,7 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload, faEnvelopeOpenText } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
-import PersonalVideo from "./PersonalVideo";
 import PersonalImage from "../assets/images/personal_photo_2.jpeg"
 import { Typewriter } from "react-simple-typewriter"
 
@@ -52,12 +51,6 @@ export default function HeroSection({content: {title, roleLines}}) {
             />
           </div>
         </div>
-
-{/*       <div className="flex flex-col items-center gap-4">
-        <PersonalVideo />
-        <p className="text-lg text-gray-900 font-medium">Hello, hello, tech people! </p>
-      </div> */}
-      
     </div>
   </header>
   )

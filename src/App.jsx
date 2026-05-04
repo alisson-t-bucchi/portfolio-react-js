@@ -6,7 +6,7 @@ import AboutMe from "./components/AboutMe"
 import Banner from "./components/Banner"
 import AnimatedBackground from "./components/AnimatedBackground"
 import Testimonials from "./components/Testimonials"
-import TechStackByCores from "./components/TechStackByCores"
+import TechStack from "./components/TechStack"
 
 const heroSection = {
   title: "Alisson T. Bucchi",
@@ -33,7 +33,7 @@ function App() {
 
         <HeroSection content={heroSection} />
 
-        <TechStackByCores></TechStackByCores>
+        <TechStack></TechStack>
 
         <AboutMe></AboutMe>
 
