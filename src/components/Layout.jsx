@@ -8,7 +8,6 @@ import ScrollDinamicIndicator from "../components/ScrollDinamicIndicator";
 export default function Layout({ children }) {
     const [menuVisible, setMenuVisible] = useState(false);
     const [projectsOpen, setProjectsOpen] = useState(false);
-    const [counter, setCounter] = useState(0);
   
     const toggleMenu = () => {
       setMenuVisible(!menuVisible);
@@ -18,15 +17,6 @@ export default function Layout({ children }) {
       const toggleProjects = () => {
         setProjectsOpen(!projectsOpen);
     };
-    
-    /* useEffect(() => {
-        const storedCount = localStorage.getItem("pageVisitCount");
-        const count = storedCount ? parseInt(storedCount, 10) : 0;
-        const newCount = count + 1;
-        setCounter(newCount);
-        localStorage.setItem("pageVisitCount", newCount);
-    }, []);
-    **/
 
     return (
     <>
@@ -37,27 +27,23 @@ export default function Layout({ children }) {
                 <FontAwesomeIcon icon={faBars} size="2x" onClick={toggleMenu} /> 
             </div>
 
-            <div className={`${menuVisible ? "block" : "hidden"} space-x-6 font-bold text-2xl lg:flex flex-col lg:flex-row absolute lg:static top-16 left-0 w-full lg:w-auto bg-white lg:bg-transparent shadow-lg lg:shadow-none p-4 lg:p-0` }>
-                <a href="#about" className="hover:text-white transition-colors duration-150 transform hover:scale-125">About</a>
+            <div className={`${menuVisible ? "block" : "hidden"} space-x-6 font-bold text-2xl lg:flex flex-col lg:flex-row absolute lg:static top-16 left-0 w-full lg:w-auto lg:bg-transparent shadow-lg lg:shadow-none p-4 lg:p-0` }>
+                <a href="#about" className="hover:text-blue-600 transition-colors duration-300 transform hover:scale-110">About</a>
                  
                  <div className="relative group">
                     <button 
-                    className="hover:text-white transition-colors duration-150 transform hover:scale-125"
+                    className="hover:text-blue-600 transition-colors duration-300 transform hover:scale-110"
                     onClick={toggleProjects}    
                     >
                         Projects
                     </button>
-                    <div className={`${projectsOpen ? "block" : "hidden"} 
-                        lg:group-hover:block 
-                        absolute z-10 mt-2 bg-white rounded-md shadow-lg p-4 space-y-2 text-xl text-black min-w-[200px]
-                        lg:left-1/2 lg:-translate-x-1/2
-                        `}>
+                    <div className={`${projectsOpen ? "block" : "hidden"} lg:group-hover:block absolute z-10 mt-2 bg-white rounded-md shadow-lg p-0.5 space-y-0.5 text-xl text-black min-w-[200px] lg:left-1/2 lg:-translate-x-1/2`}>
                         <a href="#qa" className="block hover:bg-white px-3 py-2 rounded">QA Projects</a>
                         <a href="#ai-dataviz" className="block hover:bg-white px-3 py-2 rounded">AI & Data Visual</a>
                         <a href="#fullstack" className="block hover:bg-white px-3 py-2 rounded">Full-Stack Apps</a>
                     </div>
                 </div>
-                <a href="#testimonials" className="hover:text-white transition-colors duration-150 transform hover:scale-125">Testimonials</a>
+                <a href="#testimonials" className="hover:text-blue-600 transition-colors duration-300 transform hover:scale-110">Testimonials</a>
                 {/* <a href="#contact" className="hover:text-white transition-colors duration-150 transform hover:scale-125">Contact</a> */}
             </div>
         </nav>

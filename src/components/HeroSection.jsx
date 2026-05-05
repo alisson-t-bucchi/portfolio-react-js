@@ -6,7 +6,7 @@ import { Typewriter } from "react-simple-typewriter"
 
 export default function HeroSection({content: {title, roleLines}}) {
   return (
-  <header className="text-center py-18 lg:px-12 p-4 mt-10">
+  <header className="text-center py-18 lg:px-12 p-6 mt-10">
     <div className="grid lg:grid-cols-2 lg:min-h-6/12 lg:mt-8">
       <div className="flex flex-col gap-4 justify-center items-center lg:items-start">
           <h2 className="text-4xl font-bold">
@@ -31,7 +31,7 @@ export default function HeroSection({content: {title, roleLines}}) {
               delaySpeed={1000}
             />
           </h2>
-          <div className="py-3 lg:flex space-x-6 mt-2 items-center">
+          <div className="py-3 flex flex-nowrap gap-4 sm:gap-6 mt-2 items-center justify-center">
             <a href="#qa" className=" bg-white text-slate-900 font-bold text-center px-4 py-2 rounded-lg transition-colors duration-150 transform hover:scale-110">
                 View Projects 🔎
             </a> 
@@ -43,7 +43,7 @@ export default function HeroSection({content: {title, roleLines}}) {
             </a>
           </div>
         </div>
-        <div className="flex flex-col items-center gap-4">
+        <div className="flex flex-col items-center gap-4 lg:px-12 p-6 mt-10">
           <div className="p-[4px] rounded-full bg-gradient-to-r from-blue-300 via-blue-600 to-blue-900">
             <img className="w-70 h-70 rounded-full object-cover"
             src={PersonalImage}
