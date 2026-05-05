@@ -40,7 +40,9 @@ function App() {
       <Testimonials></Testimonials>
 
     </Layout>
+
     <Analytics />
+    
   </main>
   ); 
 }
