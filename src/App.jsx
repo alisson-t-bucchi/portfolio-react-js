@@ -29,25 +29,22 @@ function App() {
   []);
 
   return (
-    <main className=" bg-slate-900 text-white p-4">
+    <>
+        <main className=" bg-slate-900 text-white p-4">
       <Layout>
 
-        <Analytics/>
-
         <HeroSection content={heroSection} />
-
         <TechStack></TechStack>
-
         <AboutMe></AboutMe>
-
         <Banner></Banner>
-
         <ProjectCards></ProjectCards>
-
         <Testimonials></Testimonials>
 
       </Layout>
     </main>
+    
+    <Analytics />
+    </>
   ); 
 }
 export default App; 
