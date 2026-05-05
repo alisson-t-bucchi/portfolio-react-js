@@ -7,7 +7,7 @@ import Banner from "./components/Banner"
 import AnimatedBackground from "./components/AnimatedBackground"
 import Testimonials from "./components/Testimonials"
 import TechStack from "./components/TechStack"
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react"
 
 const heroSection = {
   title: "Alisson T. Bucchi",
