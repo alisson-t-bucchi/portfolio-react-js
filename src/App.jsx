@@ -7,6 +7,7 @@ import Banner from "./components/Banner"
 import AnimatedBackground from "./components/AnimatedBackground"
 import Testimonials from "./components/Testimonials"
 import TechStack from "./components/TechStack"
+import { Analytics } from "@vercel/analytics/next"
 
 const heroSection = {
   title: "Alisson T. Bucchi",
@@ -30,6 +31,8 @@ function App() {
   return (
     <main className=" bg-slate-900 text-white p-4">
       <Layout>
+
+        <Analytics/>
 
         <HeroSection content={heroSection} />
 
