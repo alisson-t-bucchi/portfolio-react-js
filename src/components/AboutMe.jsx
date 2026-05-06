@@ -10,8 +10,8 @@ export default function AboutMe() {
       <div className="grid lg:grid-cols-2 gap-10 items-center">
         <div className="flex justify-center">
           <DotLottieReact
-            src="https://lottie.host/e27b8e85-6476-4ff8-955c-e681beffa455/ii4uA4xPmk.lottie"
-            className="w-full max-w-[400px] sm:max-w-[500px] md:max-w-[700px] h-auto"
+            src="https://lottie.host/7501af9d-97f1-4eb8-8a16-d6f5cce09b1d/e9ZZHkoIQ0.lottie"
+            className="w-full h-auto"
             autoplay
             loop
           />
