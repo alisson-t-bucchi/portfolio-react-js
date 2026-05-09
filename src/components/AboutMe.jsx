@@ -16,7 +16,7 @@ export default function AboutMe() {
             loop
           />
         </div>
-        <div className="bg-white/5 border border-white/10 rounded-2xl p-8 backdrop-blur-md shadow-lg">
+        <div className="bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8 backdrop-blur-xl shadow-[0_8px_30px_rgba(0,0,0,0.3)]">
           <div className="space-y-4 text-gray-300 text-lg leading-relaxed">
             <p>
               👋🏻 <span className="font-semibold text-white">Hi, I’m Alisson Bucchi.</span>

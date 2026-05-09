@@ -77,7 +77,7 @@ function TechItem({ icon, name }) {
 
 function TechSection({ title, description, items }) {
   return (
-    <div className="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-md hover:scale-105">
+    <div className="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-md shadow-[0_8px_30px_rgba(0,0,0,0.3)] hover:scale-105">
       <h4 className="text-lg font-semibold text-white mb-1">{title}</h4>
       <p className="text-sm text-gray-400 mb-4">{description}</p>
 

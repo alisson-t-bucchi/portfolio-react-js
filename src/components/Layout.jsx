@@ -20,9 +20,17 @@ export default function Layout({ children }) {
 
     return (
     <>
-        <nav className="scroll-smooth py-4 flex justify-between items-center lg:px-12">
-            <h1 className="text-3xl font-bold"> My Portfolio</h1>
-
+    <nav className="fixed top-0 left-0 w-full z-50 bg-slate-900/70 backdrop-blur-md border-b border-white/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-4 flex justify-between items-center">
+            <div className="flex items-baseline gap-3">
+                <h1 className="text-2xl md:text-3xl font-bold text-white">
+                    Alisson 
+                </h1>
+                <span className="text-white/30">|</span>
+                <span className="hidden sm:block text-sm text-blue-500 font-medium">
+                    QA Automation & Data
+                </span>
+            </div>
             <div className="lg:hidden" >
                 <FontAwesomeIcon icon={faBars} size="2x" onClick={toggleMenu} /> 
             </div>
@@ -46,7 +54,8 @@ export default function Layout({ children }) {
                 <a href="#testimonials" className="hover:text-blue-600 transition-colors duration-300 transform hover:scale-110">Testimonials</a>
                 {/* <a href="#contact" className="hover:text-white transition-colors duration-150 transform hover:scale-125">Contact</a> */}
             </div>
-        </nav>
+        </div>
+    </nav>
     
     {children}
 
