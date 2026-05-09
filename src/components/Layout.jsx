@@ -27,8 +27,8 @@ export default function Layout({ children }) {
                     Alisson 
                 </h1>
                 <span className="text-white/30">|</span>
-                <span className="text-sm text-blue-500 font-medium">
-                    QA Automation & Data
+                <span className="hidden sm:block text-sm text-blue-500 font-medium">
+                    QA & Data Smart Solutions
                 </span>
             </div>
             <div className="lg:hidden" >
