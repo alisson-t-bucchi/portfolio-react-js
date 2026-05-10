@@ -426,10 +426,9 @@ export default function Cards() {
             variants={containerVariants}
             >
                 {fullStackProjects.map((project) => (
-                      <motion.div
-                      key={project.id}
-                      variants={cardVariants}
-                    >
+                    <motion.div
+                    key={project.id}
+                    variants={cardVariants} >
                     <CardsItems
                     image={project.image}
                     title={project.title}
