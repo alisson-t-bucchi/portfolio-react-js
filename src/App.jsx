@@ -1,7 +1,7 @@
 import {useEffect} from "react"
 import Layout from "./components/Layout" 
 import HeroSection from "./components/HeroSection"
-import ProjectCards from "./components/ProjectCards"
+import ProjectCardsNew from "./components/ProjectCardsNew"
 import AboutMe from "./components/AboutMe"
 import Banner from "./components/Banner"
 import AnimatedBackground from "./components/AnimatedBackground"
@@ -36,7 +36,7 @@ function App() {
       <TechStack></TechStack>
       <AboutMe></AboutMe>
       <Banner></Banner>
-      <ProjectCards></ProjectCards>
+      <ProjectCardsNew></ProjectCardsNew>
       <Testimonials></Testimonials>
 
     </Layout>

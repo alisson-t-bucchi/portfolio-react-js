@@ -28,31 +28,41 @@ export default function Banner() {
   }, []);
 
   return (
-    <section className="overflow-hidden py-8 ">
-        <h3 className="text-3xl font-black text-center mb-4 py-4">Companies</h3>
-      <div className="relative w-full h-40 md:h-56 lg:h-64 flex items-center">
-        <motion.div
-          className="flex w-max flex-nowrap gap-x-18"
-          initial={{ x: "0%" }}
-          animate={{ x: "-100%"}}
-          transition={{
-            repeat: Infinity,
-            repeatType: "loop", 
-            duration: 80,
-            ease: "linear",
-          }}
-        >
-            {[...images.slice(0, numImages), ...images.slice(0, numImages), ...images.slice(0, numImages)].map((src, index) => (
-            <div key={index} className="w-40 md:w-52 lg:w-64 h-full">
-              <img
-              src={src}
-              alt={`img-${index}`}
-              className="w-full h-full object-contain rounded-lg"
-              />
-            </div>
-            ))}
-        </motion.div>
-      </div>
-    </section>
-  );
-};
+  <section className="overflow-hidden py-22">
+    <div className="text-center mb-22">
+      <h3 className="text-2xl md:text-3xl font-semibold text-center mb-8 text-white">
+        Companies I’ve worked with
+      </h3>
+    </div>
+    
+    <div className="relative w-full flex items-center h-24 md:h-32">
+
+    {/* fade left */}
+    <div className="absolute left-0 top-0 h-full w-16 bg-gradient-to-r from-slate-900 to-transparent z-10" />
+
+    {/* fade right */}
+    <div className="absolute right-0 top-0 h-full w-16 bg-gradient-to-l from-slate-900 to-transparent z-10" />
+
+    <motion.div
+      className="flex w-max flex-nowrap gap-x-10 md:gap-x-14"
+      animate={{ x: "-50%" }}
+      transition={{
+        repeat: Infinity,
+        duration: 40,
+        ease: "linear",
+      }}
+    >
+      {[...images, ...images].map((src, index) => (
+        <div key={index} className="w-44 md:w-56 lg:w-72">
+          <img
+            src={src}
+            alt="company logo"
+            className="w-full h-auto object-contain opacity-70 grayscale hover:grayscale-0 hover:opacity-100 transition duration-300"
+          />
+        </div>
+      ))}
+    </motion.div>
+  </div>
+</section>
+
+)};

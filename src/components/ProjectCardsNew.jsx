@@ -266,38 +266,74 @@ const fullStackProjects = [
     },
 ];
 
-const CardsItems = ({image, title, description, icons, video, code}) => {
-    return (
-    <div className="shadow-lg rounded-4xl p-6 bg-slate-800">
-        <img src={image} alt="Project" className="rounded-md" />
-        <h4 className="mt-4 text-xl font-bold text-white">{title}</h4>
-        {description.split("\n").map((line, index) => (
-            <p className="text-l text-gray-300" key={index}>{line}</p>
-        ))}
-        {icons && Array.isArray(icons) && (
-            <div className="flex flex-wrap gap-2 mt-4 font-bold">
-                {icons.map(({ icon, name }, idx) => (
-                    <img
-                        key={idx}
-                        src={icon}
-                        alt={name}
-                        title={name}
-                        className="w-12 h-12 p-1 m-1"
-                    />
-                ))}
-            </div>
-        )}
-        <div className="flex space-x-4 mt-4">
-            <a href={video} target="_blank" rel="noopener noreferrer" className="bg-slate-800 hover:bg-slate-500 border-2 border-slate-500 px-4 py-1 rounded-lg transition duration-500 ease-in-out">
-                Live Preview
-            </a>
-            <a href={code} target="_blank" rel="noopener noreferrer" className="bg-slate-800 hover:bg-slate-500 border-2 border-slate-500 px-4 py-1 rounded-lg transition duration-500 ease-in-out">
-                View code
-            </a>
+const CardsItems = ({ image, title, description, icons, video, code }) => {
+  if (!description) return null;
+
+  const { summary, highlights, results } = description;
+
+  return (
+    <div className="bg-white/5 border border-white/10 rounded-2xl p-5 backdrop-blur-mdhover:scale-[1.02] transition duration-300">
+      <img
+        src={image} 
+        alt={title} 
+        className="rounded-md w-full h-48 object-cover"
+      />
+      <h4 className="mt-4 text-lg font-semibold text-white leading-snug">
+        {title}
+      </h4>
+      <p className="text-gray-300 text-sm mt-2">
+        {description}
+      </p>
+      {highlights && (
+        <ul className="text-gray-400 text-xs mt-3 space-y-1">
+          {highlights.map((item, index) => (
+            <li key={index}>• {item}</li>
+          ))}
+        </ul>
+      )}
+      {results && (
+        <p className="text-gray-500 text-xs mt-3">
+          {results}
+        </p>
+      )}
+      {icons?.length > 0 && (
+        <div className="flex flex-wrap gap-2 mt-4">
+          {icons.map(({ icon, name }, idx) => (
+            <img
+              key={idx}
+              src={icon}
+              alt={name}
+              title={name}
+              className="w-8 h-8 opacity-80 hover:opacity-100 transition"
+            />
+          ))}
         </div>
+      )}
+
+      {/* ACTIONS */}
+      <div className="flex gap-3 mt-5">
+        {video && (
+          <a
+            href={video}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-blue-600 hover:bg-blue-700 text-white text-sm px-4 py-2 rounded-lg transition">
+            Live
+          </a>
+        )}
+        {code && (
+          <a
+            href={code}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border border-white/20 hover:border-white/40  text-gray-300 text-sm px-4 py-2 rounded-lg transition">
+            Code
+          </a>
+        )}
+      </div>
     </div>
-    )
-}
+  );
+};
 
 export default function Cards() {      
     return(
@@ -405,9 +441,7 @@ export default function Cards() {
                 ))}
             </motion.div>
         </section>
-
     </>
     )
 }
-
 export {qaProjects, iaProjects, fullStackProjects}
