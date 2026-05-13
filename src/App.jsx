@@ -14,7 +14,7 @@ const heroSection = {
   roleLines: [
     "QA Automation Engineer",
     "Data-Driven Testing",
-    "Exploring AI & Scalable Systems"
+    "Scalable & Reliable Solutions"
   ]
 } 
 
