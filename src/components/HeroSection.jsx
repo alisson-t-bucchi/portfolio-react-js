@@ -43,14 +43,14 @@ export default function HeroSection({content: {title, roleLines}}) {
             </a>
           </div>
         </div>
-        <div className="flex flex-col items-center gap-4 lg:px-12 p-6 mt-10">
+{/*         <div className="flex flex-col items-center gap-4 lg:px-12 p-6 mt-10">
           <div className="p-[4px] rounded-full bg-gradient-to-r from-blue-300 via-blue-600 to-blue-900">
             <img className="w-70 h-70 rounded-full object-cover"
             src={PersonalImage}
             alt="personal image"
             />
           </div>
-        </div>
+        </div> */}
     </div>
   </header>
   )
