@@ -116,7 +116,7 @@ const qaProjects = [
         video: ComingSoon, //criar video
         code:"https://github.com/alisson-t-bucchi"
     },
-    {
+/*     {
         id: 3,
         image: OrangeHRM,
         title: "Selenium with BDD test suite for Orange HRM Demo.",
@@ -153,7 +153,7 @@ const qaProjects = [
         ],
         video: ComingSoon,
         code: "https://github.com/alisson-t-bucchi"
-    },
+    }, */
     {
         id: 5,
         image: BrowserStackDemo,
