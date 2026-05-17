@@ -171,7 +171,7 @@ const qaProjects = [
             { icon: GitHubActionsIcon, name: "Github Actions" },
         ], 
         video: ComingSoon, //criar video
-        code: "https://github.com/alisson-t-bucchi"
+        code: "https://github.com/alisson-t-bucchi/browserstack-cypress-js.git"
     },
 ];
 
