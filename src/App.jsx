@@ -12,9 +12,9 @@ import { Analytics } from "@vercel/analytics/react"
 const heroSection = {
   title: "Alisson T. Bucchi",
   roleLines: [
-    "QA Automation Engineer",
-    "Data-Driven Testing",
-    "Scalable & Reliable Solutions"
+    "QA & Data Quality Engineer",
+    "ETL Testing & Validation",
+    "Scalable & Trusted Solutions"
   ]
 } 
 
