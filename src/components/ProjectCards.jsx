@@ -226,7 +226,7 @@ const iaProjects = [
     }, 
 ];
 
-/* const fullStackProjects = [
+const fullStackProjects = [
     {
       id: 1,
       image: ComingSoon,
@@ -264,7 +264,7 @@ const iaProjects = [
       video: ComingSoon,
       code: ""
     },
-]; */
+];
 
 const CardsItems = ({image, title, description, icons, video, code}) => {
     return (

@@ -226,7 +226,7 @@ const iaProjects = [
     }, 
 ];
 
-const fullStackProjects = [
+/* const fullStackProjects = [
     {
       id: 1,
       image: ComingSoon,
@@ -264,7 +264,7 @@ const fullStackProjects = [
       video: ComingSoon,
       code: ""
     },
-];
+]; */
 
 const CardsItems = ({ image, title, description, icons, video, code }) => {
   if (!description) return null;
@@ -351,9 +351,9 @@ export default function Cards() {
                 <li>
                     🧠 <strong>AI & Data Visualization:</strong> Building machine learning solutions and visual interfaces to transform data into actionable insights.
                 </li>
-                <li>
+                {/* <li>
                     🧩 <strong>Full-Stack Development:</strong> Developing scalable end-to-end applications with a focus on performance and user experience.
-                </li>
+                </li> */}
             </ul>
             <p>
                 Each project reflects a practical approach to solving real-world problems through technology, with a strong focus on quality, scalability, and continuous improvement.
@@ -416,7 +416,7 @@ export default function Cards() {
             </motion.div>
         </section>
 
-        <section id="fullstack" className="shadow-lg rounded-lg p-4">
+        {/* <section id="fullstack" className="shadow-lg rounded-lg p-4">
             <h3 className="text-2xl font-black text-center mb-4 py-10">🧩 Full-Stack Apps</h3>
             <motion.div
             className="grid lg:grid-cols-3 lg:gap-6 md:grid-cols-2 md:gap-6 mb-4 sm:grid-cols-1 gap-6"
@@ -439,8 +439,8 @@ export default function Cards() {
                 </motion.div>
                 ))}
             </motion.div>
-        </section>
+        </section>*/}
     </>
     )
 }
-export {qaProjects, iaProjects, fullStackProjects}
+export {qaProjects, iaProjects}
