@@ -41,8 +41,8 @@ export default function Layout({ children }) {
                             <button className="hover:text-blue-600 transition-colors duration-300 transform hover:scale-110" onClick={toggleProjects}>Projects</button>
                             <div className={`${projectsOpen ? "block" : "hidden"} lg:group-hover:block absolute z-10 mt-2 bg-white rounded-md shadow-lg p-0.5 space-y-0.5 text-base sm:text-lg lg:text-xl text-black min-w-[200px] left-1/2 -translate-x-1/2`}>
                                 <a href="#qa" className="block hover:bg-gray-100 px-3 py-2 rounded whitespace-nowrap">Quality Engineering</a>
-                                <a href="#ai-dataviz" className="block hover:bg-gray-100 px-3 py-2 rounded whitespace-nowrap">Data Engineering</a>
-                                <a href="#fullstack" className="block hover:bg-gray-100 px-3 py-2 rounded whitespace-nowrap">AI & Machine Learning</a>
+                                <a href="#data-quality" className="block hover:bg-gray-100 px-3 py-2 rounded whitespace-nowrap">Data Engineering</a>
+                                <a href="#ai-dataviz" className="block hover:bg-gray-100 px-3 py-2 rounded whitespace-nowrap">AI & Machine Learning</a>
                             </div>
                         </div>
                         <a href="#testimonials" className="hover:text-blue-600 transition-colors duration-300 transform hover:scale-110">Testimonials</a>
