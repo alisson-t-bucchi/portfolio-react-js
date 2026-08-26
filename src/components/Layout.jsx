@@ -46,9 +46,9 @@ export default function Layout({ children }) {
                         Projects
                     </button>
                     <div className={`${projectsOpen ? "block" : "hidden"} lg:group-hover:block absolute z-10 mt-2 bg-white rounded-md shadow-lg p-0.5 space-y-0.5 text-xl text-black min-w-[200px] lg:left-1/2 lg:-translate-x-1/2`}>
-                        <a href="#qa" className="block hover:bg-white px-3 py-2 rounded">QA Projects</a>
-                        <a href="#ai-dataviz" className="block hover:bg-white px-3 py-2 rounded">AI & Data Visual</a>
-                        <a href="#fullstack" className="block hover:bg-white px-3 py-2 rounded">Full-Stack Apps</a>
+                        <a href="#qa" className="block hover:bg-white px-3 py-2 rounded">Quality Engineering</a>
+                        <a href="#ai-dataviz" className="block hover:bg-white px-3 py-2 rounded">Data Engineering</a>
+                        <a href="#fullstack" className="block hover:bg-white px-3 py-2 rounded">AI & Machine Learning</a>
                     </div>
                 </div>
                 <a href="#testimonials" className="hover:text-blue-600 transition-colors duration-300 transform hover:scale-110">Testimonials</a>
