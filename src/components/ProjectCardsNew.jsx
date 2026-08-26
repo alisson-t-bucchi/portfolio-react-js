@@ -45,6 +45,7 @@ import MochaReportIcon from "../assets/icons/mocha-original.svg"
 import RobotFrameworkIcon from "../assets/icons/robotframework-original.svg"
 import JenkinsIcon from "../assets/icons/jenkins-original.svg"
 import JMeterIcon from "../assets/icons/jmeter-original.svg"
+import GreatExpectationsIcon from "../assets/icons/gx-logo.svg"
 
 
 const containerVariants = {
@@ -175,6 +176,47 @@ const qaProjects = [
     },
 ];
 
+const dataQualityProjects = [
+    {
+      id: 1,
+      image: ComingSoon,
+      title: "E-Commerce Data Quality & Analytics Pipeline",
+      description: "End-to-end data pipeline built on the Brazilian Olist public dataset.\n" +
+               "Includes ingestion, profiling, and data quality validation with Great Expectations.\n" +
+               "Transforms raw e-commerce data into a relational model loaded into MySQL.\n" +
+               "📌 Highlights: Automated data quality checks, curated analytics schema, and seamless integration with Power BI.\n" +
+               "📈 Results: Reliable business metrics, improved trust in data, and continuous monitoring of both quality and KPIs.",
+      icons: [
+        { icon: PythonIcon, name: "Python" },
+        { icon: PandasIcon, name: "Pandas" },
+        { icon: GreatExpectationsIcon, name: "Great Expectations" },
+        { icon: MySQLIcon, name: "MySQL" },
+        { icon: PowerBIIcon, name: "Power BI" },
+  ],  
+  video: ComingSoon,
+  code: "https://github.com/alisson-t-bucchi/ecommerce-data-quality-pipeline"
+},
+
+   /*  {
+      id: 2,
+      image: ComingSoon,
+      title: "Chatbot Application.",
+      description:  "Real-time chatbot app with Firebase integration.\n" +
+                    "Features user authentication, persistent chat history, and seamless live messaging.\n" +
+                    "📌 Highlights: Scalable backend, session persistence, secure messaging flow.\n" +
+                    "📈 Results: Real-time interaction with reliable communication and user state management.",
+      icons: [
+        { icon: JavaScriptIcon, name: "JavaScript" },
+        { icon: ReactIcon, name: "React" },
+        { icon: TailwindcssIcon, name: "Tailwindcss" },
+        { icon: NodeIcon, name: "Node.js" },
+        { icon: FirebaseIcon, name: "Firebase" },
+    ],  
+      video: ComingSoon,
+      code: ""
+    }, */
+];
+
 const iaProjects = [
     {
       id: 1,
@@ -226,53 +268,13 @@ const iaProjects = [
     }, 
 ];
 
-/* const fullStackProjects = [
-    {
-      id: 1,
-      image: ComingSoon,
-      title: "Hotel Booking System.",
-      description:  "Full-stack hotel booking platform built, includes user authentication, dynamic room management, and intuitive booking workflows.\n" +
-                    "Powered by Prisma ORM over a MySQL database.\n" +
-                    "📌 Highlights: Scalable architecture, clean UI, secure login, and optimized data handling.\n" +
-                    "📈 Results: Streamlined booking operations and efficient room availability updates.",
-      icons: [
-        { icon: JavaScriptIcon, name: "JavaScript" },
-        { icon: ReactIcon, name: "React" },
-        { icon: TailwindcssIcon, name: "Tailwindcss" },
-        { icon: NodeIcon, name: "Node.js" },
-        { icon: PrismaIcon, name: "Prisma"},
-        { icon: MySQLIcon, name: "MySQL" },
-    ],  
-      video: ComingSoon,
-      code: "https://github.com/alisson-t-bucchi/hotel-booking-react-js.git"
-    },
-    {
-      id: 2,
-      image: ComingSoon,
-      title: "Chatbot Application.",
-      description:  "Real-time chatbot app with Firebase integration.\n" +
-                    "Features user authentication, persistent chat history, and seamless live messaging.\n" +
-                    "📌 Highlights: Scalable backend, session persistence, secure messaging flow.\n" +
-                    "📈 Results: Real-time interaction with reliable communication and user state management.",
-      icons: [
-        { icon: JavaScriptIcon, name: "JavaScript" },
-        { icon: ReactIcon, name: "React" },
-        { icon: TailwindcssIcon, name: "Tailwindcss" },
-        { icon: NodeIcon, name: "Node.js" },
-        { icon: FirebaseIcon, name: "Firebase" },
-    ],  
-      video: ComingSoon,
-      code: ""
-    },
-]; */
-
 const CardsItems = ({ image, title, description, icons, video, code }) => {
   if (!description) return null;
 
   const { summary, highlights, results } = description;
 
   return (
-    <div className="bg-white/5 border border-white/10 rounded-2xl p-5 backdrop-blur-mdhover:scale-[1.02] transition duration-300">
+    <div className="bg-white/15 border border-white/10 rounded-2xl p-5 backdrop-blur-mdhover:scale-[1.02] transition duration-300">
       <img
         src={image} 
         alt={title} 
@@ -345,15 +347,15 @@ export default function Cards() {
                 This portfolio presents selected projects across three core areas, focused on delivering reliable systems and data-driven solutions.
             </p>
             <ul className="list-none space-y-3 text-gray-300 leading-relaxed">
-                <li>
-                    🧪 <strong>QA Automation:</strong> Designing and implementing automated tests to ensure software quality, reliability, and performance.
-                </li>
-                <li>
-                    🧠 <strong>AI & Data Visualization:</strong> Building machine learning solutions and visual interfaces to transform data into actionable insights.
-                </li>
-                {/* <li>
-                    🧩 <strong>Full-Stack Development:</strong> Developing scalable end-to-end applications with a focus on performance and user experience.
-                </li> */}
+              <li>
+                🧪 <strong>QA Engineering:</strong> Designing and implementing automated tests to ensure software quality, reliability, and performance across modern applications and systems.
+              </li>
+              <li>
+                📊 <strong>Data Quality & Engineering:</strong> Building data pipelines and transformation workflows using Python, SQL, databases, and modern data engineering tools.
+              </li>
+              <li>
+                🤖 <strong>AI & Machine Learning:</strong> Exploring and developing practical AI and machine learning solutions using data-driven approaches, Python, and modern ML technologies.
+              </li>
             </ul>
             <p>
                 Each project reflects a practical approach to solving real-world problems through technology, with a strong focus on quality, scalability, and continuous improvement.
@@ -362,7 +364,7 @@ export default function Cards() {
         </section>
 
         <section id="qa" className="shadow-lg rounded-lg p-4">
-            <h3 className="text-2xl font-black text-center mb-4 py-10">🧪 Quality Assurance</h3>
+            <h3 className="text-2xl font-black text-center mb-4 py-10">🧪 Quality Engineering</h3>
             <motion.div
             className="grid lg:grid-cols-3 lg:gap-6 md:grid-cols-2 md:gap-6 mb-4 sm:grid-cols-1 gap-6"
             initial="offscreen"
@@ -387,10 +389,34 @@ export default function Cards() {
                     ))} 
             </motion.div>
         </section>
-   
-        
+
+        <section id="data-quality" className="shadow-lg rounded-lg p-4">
+            <h3 className="text-2xl font-black text-center mb-4 py-10">🧩 Data Quality & Engineering</h3>
+            <motion.div
+            className="grid lg:grid-cols-3 lg:gap-6 md:grid-cols-2 md:gap-6 mb-4 sm:grid-cols-1 gap-6"
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={{ amount: 0.1, once: true }}
+            variants={containerVariants}
+            >
+                {dataQualityProjects.map((project) => (
+                    <motion.div
+                    key={project.id}
+                    variants={cardVariants} >
+                    <CardsItems
+                    image={project.image}
+                    title={project.title}
+                    description={project.description}
+                    video={project.video}
+                    code={project.code}
+                    icons={project.icons} />
+                </motion.div>
+                ))}
+            </motion.div>
+        </section>
+
         <section id="ai-dataviz" className="shadow-lg rounded-lg p-4">
-            <h3 className="text-2xl font-black text-center mb-4 py-10">🧠 AI & Data Visual 📊</h3>
+            <h3 className="text-2xl font-black text-center mb-4 py-10">🧠 AI & Machine Learning 📊</h3>
             <motion.div
             className="grid lg:grid-cols-3 lg:gap-6 md:grid-cols-2 md:gap-6 mb-4 sm:grid-cols-1 gap-6"
             initial="offscreen"
@@ -415,32 +441,7 @@ export default function Cards() {
                     ))}
             </motion.div>
         </section>
-
-        {/* <section id="fullstack" className="shadow-lg rounded-lg p-4">
-            <h3 className="text-2xl font-black text-center mb-4 py-10">🧩 Full-Stack Apps</h3>
-            <motion.div
-            className="grid lg:grid-cols-3 lg:gap-6 md:grid-cols-2 md:gap-6 mb-4 sm:grid-cols-1 gap-6"
-            initial="offscreen"
-            whileInView="onscreen"
-            viewport={{ amount: 0.1, once: true }}
-            variants={containerVariants}
-            >
-                {fullStackProjects.map((project) => (
-                    <motion.div
-                    key={project.id}
-                    variants={cardVariants} >
-                    <CardsItems
-                    image={project.image}
-                    title={project.title}
-                    description={project.description}
-                    video={project.video}
-                    code={project.code}
-                    icons={project.icons} />
-                </motion.div>
-                ))}
-            </motion.div>
-        </section>*/}
     </>
     )
 }
-export {qaProjects, iaProjects}
+export {qaProjects, dataQualityProjects, iaProjects}

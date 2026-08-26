@@ -17,6 +17,7 @@ import ScikitlearnIcon from "../assets/icons/scikitlearn-original.svg"
 import TensorflowIcon from "../assets/icons/tensorflow-original.svg"
 import RIcon from "../assets/icons/r-original.svg"
 import ApacheSparkIcon from "../assets/icons/apachespark-original-wordmark.svg"
+import GreatExpectationsIcon from "../assets/icons/gx-logo-dark.svg"
 
 const techStack = [
   {
@@ -37,6 +38,7 @@ const techStack = [
       { name: "Pandas", icon: PandasIcon },
       { name: "PostgreSQL", icon: PostgreSQLIcon },
       { name: "R", icon: RIcon },
+      { name: "Great Expectations", icon: GreatExpectationsIcon },
     ],
   },
   {
