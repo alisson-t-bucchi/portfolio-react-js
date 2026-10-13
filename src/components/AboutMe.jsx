@@ -11,7 +11,7 @@ export default function AboutMe() {
         <div className="flex justify-center">
           <DotLottieReact
             src="https://lottie.host/7501af9d-97f1-4eb8-8a16-d6f5cce09b1d/e9ZZHkoIQ0.lottie"
-            className="w-full h-auto"
+            className="w-full max-w-[700px] h-auto"
             autoplay
             loop
           />
