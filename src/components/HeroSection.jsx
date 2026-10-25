@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload, faEnvelopeOpenText } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
-import PersonalImage from "../assets/images/personal_photo.webp"
+import PersonalImage from "../assets/images/personal_image.webp"
 import { Typewriter } from "react-simple-typewriter"
 
 export default function HeroSection({content: {title, roleLines}}) {
@@ -45,7 +45,8 @@ export default function HeroSection({content: {title, roleLines}}) {
         </div>
         <div className="flex flex-col items-center gap-4 lg:px-12 p-6 mt-10">
           <div className="p-[4px] rounded-full bg-gradient-to-r from-blue-300 via-blue-600 to-blue-900">
-            <img className="w-70 h-70 rounded-full object-cover"
+            <img className="w-100 h-100 rounded-full object-cover"
+            // <img className="w-80 h-130 rounded-full object-cover" - if use personal_full_body_image.webp, the image will be cut off, so use personal_full_body_image.webp instead
             src={PersonalImage}
             alt="personal image"
             />
