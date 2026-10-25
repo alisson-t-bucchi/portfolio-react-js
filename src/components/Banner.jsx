@@ -4,12 +4,14 @@ import WorkanaLogo from "../assets/images/workana-logo.webp";
 import LogicalisLogo from "../assets/images/logicalis-logo.webp"
 import UpworkLogo from "../assets/images/upwork-logo.webp"; 
 import SolinftecLogo from "../assets/images/solinftec-logo.webp";
+import ExpleoLogo from "../assets/images/expleo-logo.webp";
 
 const images = [
   WorkanaLogo,
   LogicalisLogo,
   UpworkLogo,
-  SolinftecLogo
+  ExpleoLogo,
+  SolinftecLogo,
 ];
 
 export default function Banner() {

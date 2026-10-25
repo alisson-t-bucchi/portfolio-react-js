@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload, faEnvelopeOpenText } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
-import PersonalImage from "../assets/images/personal_photo_2.jpeg"
+import PersonalImage from "../assets/images/personal_photo.webp"
 import { Typewriter } from "react-simple-typewriter"
 
 export default function HeroSection({content: {title, roleLines}}) {

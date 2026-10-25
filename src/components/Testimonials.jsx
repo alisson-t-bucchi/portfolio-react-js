@@ -1,4 +1,5 @@
 import Person1 from "../assets/images/patricia-moutinho.webp"
+import Person2 from "../assets/images/eduardo-donzelli.webp"
 
 const testimonialsData = [
   {
@@ -7,6 +8,13 @@ const testimonialsData = [
     image: Person1,
     name: "Patricia Moutinho",
     title: "UI Designer and Software Testing - Logicalis Portugal",
+  },
+  {
+    id: 2,
+    text: "I had the opportunity to follow Alisson's work, even if indirectly, and also to share knowledge with him in some moments of learning and informal mentoring. During this time, I could see his dedication, discipline, and, above all, his constant pursuit of knowledge and professional development. Alisson shows a lot of determination to learn, seeking to understand concepts in depth and continuously improve. Another point worth highlighting is his organization and good work and study habits, which reflect his commitment and responsibility in everything he sets out to do. It is very rewarding to follow professionals who show genuine interest in learning and a willingness to take on new challenges. I recommend Alisson for his attitude, dedication, and eagerness to grow. I’m sure these qualities will contribute greatly to his professional development.",
+    image: Person2,
+    name: "Eduardo Donzelli Paino",
+    title: "Platform Engineer - Streaming @PicPay Brasil",
   },
 ];
   
